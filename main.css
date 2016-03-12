@@ -120,12 +120,14 @@ section.visible {
 
 section {
 	background-color: rgba(255,255,255,0.4);
+
+	height: 100%;
 	
 	-webkit-flex: 1;
 	flex: 1;
 
-	-webkit-justify-content: center;
-	justify-content: center;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
 	
 	-webkit-align-items: center;
 	align-items: center;
@@ -134,6 +136,29 @@ section {
 	flex-direction: column;
 	
 	display: none;
+}
+
+section .img-container {
+	width: 100vw;
+	height: 35vh;
+}
+
+section .content-container {
+	width: 100vw;
+}
+
+
+#wedding-day .img-container {
+	background: url(/mv-banner3.jpg) no-repeat center center;
+	background-size: cover;
+}
+#travel .img-container {
+	background: url(/ct-banner.jpg) no-repeat center center;
+	background-size: cover;
+}
+#activities .img-container {
+	background: url(/tau-banner.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 @media (min-width: 550px) {
@@ -164,6 +189,10 @@ section {
 
 	.fa-3x {
 		font-size: 2.2em;
+	}
+
+	section .img-container {
+		height: 66vh;
 	}
 
 }
