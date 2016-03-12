@@ -1,0 +1,179 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	font-size: 12px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	/*small size background: */
+	background-color: #797570;
+}
+
+#main {
+	position: relative;
+	height: 92vh; /*100 - fixed nav height*/
+	width: 100vw;
+	top: 8vh; /*fixed nav height*/
+	overflow-y: scroll;
+	/*color: white;*/
+
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	-webkit-align-items: center;
+	align-items: center;
+
+	font-size: 2vw;
+}
+
+#brand {
+	/*font-size: 3vh;*/
+	margin-left: 1vw;
+	margin-right: auto;
+	
+	-webkit-align-items: cetner;
+	align-items: center;
+
+	display: none;
+
+	cursor: pointer;
+}
+#brand span {
+	transition: all 1s ease-in-out;
+}
+
+nav {
+	background-color: rgba(96,94,91,1);
+	position: fixed; /*for iphone IF SCROLL*/
+	top: 0;
+	z-index: 1000;
+	width: 100vw;
+	color:white; /*declare this in one place*/
+	height: 8vh;
+	
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	-webkit-align-items: cetner;
+	align-items: cetner;
+}
+nav ul {
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin: 0;
+
+	display: -webkit-flex;
+	display: flex;	
+	/*justify-content: space-around;*/
+	-webkit-align-items: center;
+	align-items: center;
+
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+nav li {
+	list-style: none;
+	/*height: 8vh;*/
+	width: 10vh;
+	/*min-height: 8vh;*/
+
+	text-align: center;
+	color: rgba(255,255,255,0.9);
+	font-size: 1.5vh;
+
+	cursor: pointer;
+
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+nav li:focus {
+	background: black;
+}
+
+.active {
+	/*change this color*/
+	color: #DBCBAB;
+}
+
+section.visible {
+	display: -webkit-flex;
+	display: flex;
+}
+
+section {
+	background-color: rgba(255,255,255,0.4);
+	
+	-webkit-flex: 1;
+	flex: 1;
+
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	-webkit-align-items: center;
+	align-items: center;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	
+	display: none;
+}
+
+@media (min-width: 550px) {
+	#home {
+		height: 100%;
+		background: url(/couple6.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#main {
+		/*height: 75vh;*/
+		top: 50px;
+	}
+
+	#brand {
+		display: block;
+	}
+
+	nav {
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+		height: 50px;
+	}
+
+	nav li {
+		/*height: 9vh;
+		width: 9vh;
+		min-height: 9vh;
+		max-height: 9vh;
+		min-width: 10vh;*/
+		min-width: 65px;
+		font-size: 11px;
+	}
+
+	.fa-3x {
+		font-size: 2.2em;
+	}
+
+}
