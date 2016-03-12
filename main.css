@@ -161,6 +161,39 @@ section .content-container {
 	background-size: cover;
 }
 
+#registry ul {
+	margin: 0;
+	padding: 0;
+}
+#registry li {
+	list-style: none;
+	width: 100vw;
+	height: 23vh;
+
+	display: -webkit-flex;
+	display: flex;
+
+	/*-webkit-flex-direction: column;
+	flex-direction: column;*/
+	
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-items: center;
+}
+#registry li:nth-child(even) {
+	background: black;
+}
+#registry li:nth-child(odd) {
+	background: white;
+}
+
+#registry img {
+	width: 50vw;
+}
+
+
 @media (min-width: 550px) {
 	#home {
 		height: 100%;
@@ -193,6 +226,10 @@ section .content-container {
 
 	section .img-container {
 		height: 66vh;
+	}
+
+	#registry img {
+		width: 40vw;
 	}
 
 }
