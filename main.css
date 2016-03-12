@@ -35,7 +35,6 @@ body {
 }
 
 #brand {
-	/*font-size: 3vh;*/
 	margin-left: 1vw;
 	margin-right: auto;
 	
@@ -75,7 +74,7 @@ nav ul {
 
 	display: -webkit-flex;
 	display: flex;	
-	/*justify-content: space-around;*/
+	
 	-webkit-align-items: center;
 	align-items: center;
 
@@ -85,9 +84,7 @@ nav ul {
 
 nav li {
 	list-style: none;
-	/*height: 8vh;*/
 	width: 10vh;
-	/*min-height: 8vh;*/
 
 	text-align: center;
 	color: rgba(255,255,255,0.9);
@@ -113,7 +110,6 @@ nav li:focus {
 }
 
 .active {
-	/*change this color*/
 	color: #DBCBAB;
 }
 
@@ -148,7 +144,6 @@ section {
 	}
 
 	#main {
-		/*height: 75vh;*/
 		top: 50px;
 	}
 
@@ -163,11 +158,6 @@ section {
 	}
 
 	nav li {
-		/*height: 9vh;
-		width: 9vh;
-		min-height: 9vh;
-		max-height: 9vh;
-		min-width: 10vh;*/
 		min-width: 65px;
 		font-size: 11px;
 	}
