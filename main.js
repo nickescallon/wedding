@@ -61,6 +61,7 @@ function transitionTo(id) {
 		var sectionNode = elems.section[elemKey];
 		return sectionNode === targetNode ? addClass(targetNode, 'visible') : removeClass(sectionNode, 'visible');
 	});
+	window.scrollTo(0,0);
 }
 
 // set up events

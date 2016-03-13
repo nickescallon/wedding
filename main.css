@@ -66,6 +66,10 @@ nav {
 	
 	-webkit-align-items: cetner;
 	align-items: cetner;
+
+	-webkit-tap-highlight-color: transparent;
+
+	box-shadow: rgba(0,0,0,0.5) 0 3px 3px;
 }
 nav ul {
 	padding-left: 1vw;
@@ -136,14 +140,17 @@ section {
 	flex-direction: column;
 	
 	display: none;
+	overflow-y: scroll;
 }
 
 section .img-container {
 	width: 100vw;
-	height: 35vh;
+	min-height: 35vh;
 }
 
 section .content-container {
+	flex: 1;
+	-webkit-flex: 1;
 	width: 100vw;
 }
 
@@ -225,7 +232,7 @@ section .content-container {
 	}
 
 	section .img-container {
-		height: 66vh;
+		min-height: 66vh;
 	}
 
 	#registry img {
