@@ -8,7 +8,7 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-size: 12px;
-	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 	-webkit-font-smoothing: antialiased;
 	/*small size background: */
 	background-color: #797570;
@@ -18,16 +18,16 @@ body {
 	position: relative;
 	height: 92vh; /*100 - fixed nav height*/
 	width: 100vw;
-	top: 8vh; /*fixed nav height*/
+	padding-top: 8vh; /*fixed nav height*/
 	overflow-y: scroll;
 	/*color: white;*/
 
 	display: -webkit-flex;
 	display: flex;
-	
+
 	-webkit-justify-content: center;
 	justify-content: center;
-	
+
 	-webkit-align-items: center;
 	align-items: center;
 
@@ -37,7 +37,7 @@ body {
 #brand {
 	margin-left: 1vw;
 	margin-right: auto;
-	
+
 	-webkit-align-items: cetner;
 	align-items: center;
 
@@ -50,26 +50,30 @@ body {
 }
 
 nav {
-	background-color: rgba(96,94,91,1);
+	background-color: white;
+
 	position: fixed; /*for iphone IF SCROLL*/
 	top: 0;
 	z-index: 1000;
 	width: 100vw;
-	color:white; /*declare this in one place*/
+
+	color: #DBCBAB;
+
 	height: 8vh;
-	
+
 	display: -webkit-flex;
 	display: flex;
-	
+
 	-webkit-justify-content: center;
 	justify-content: center;
-	
+
 	-webkit-align-items: cetner;
 	align-items: cetner;
 
 	-webkit-tap-highlight-color: transparent;
 
 	box-shadow: rgba(0,0,0,0.5) 0 3px 3px;
+	border-bottom: 1px;
 }
 nav ul {
 	padding-left: 1vw;
@@ -77,8 +81,8 @@ nav ul {
 	margin: 0;
 
 	display: -webkit-flex;
-	display: flex;	
-	
+	display: flex;
+
 	-webkit-align-items: center;
 	align-items: center;
 
@@ -88,10 +92,11 @@ nav ul {
 
 nav li {
 	list-style: none;
-	width: 10vh;
+	height: 7vh;
+	width: 11vh;
 
 	text-align: center;
-	color: rgba(255,255,255,0.9);
+	/*color: rgba(255,255,255,0.9);*/
 	font-size: 1.5vh;
 
 	cursor: pointer;
@@ -101,7 +106,7 @@ nav li {
 
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	
+
 	-webkit-justify-content: center;
 	justify-content: center;
 
@@ -111,6 +116,10 @@ nav li {
 
 nav li:focus {
 	background: black;
+}
+
+nav li.active {
+	border-bottom: 3px solid #DBCBAB;
 }
 
 .active {
@@ -126,19 +135,19 @@ section {
 	background-color: rgba(255,255,255,0.4);
 
 	height: 100%;
-	
+
 	-webkit-flex: 1;
 	flex: 1;
 
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
-	
+
 	-webkit-align-items: center;
 	align-items: center;
 
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	
+
 	display: none;
 	overflow-y: scroll;
 }
@@ -176,24 +185,25 @@ section .content-container {
 	list-style: none;
 	width: 100vw;
 	height: 23vh;
-
-	display: -webkit-flex;
-	display: flex;
-
-	/*-webkit-flex-direction: column;
-	flex-direction: column;*/
-	
-	-webkit-justify-content: center;
-	justify-content: center;
-
-	-webkit-align-items: center;
-	align-items: center;
 }
 #registry li:nth-child(even) {
 	background: black;
 }
 #registry li:nth-child(odd) {
 	background: white;
+}
+#registry a {
+	height: 100%;
+	width: 100%;
+
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-items: center;
 }
 
 #registry img {
@@ -209,7 +219,8 @@ section .content-container {
 	}
 
 	#main {
-		top: 50px;
+		padding-top: 50px;
+		height: calc(100vh - 50px);
 	}
 
 	#brand {
@@ -223,20 +234,26 @@ section .content-container {
 	}
 
 	nav li {
-		min-width: 65px;
-		font-size: 11px;
+		height: 47px; /*for underline effect to reach bottom of nav*/
+		min-width: 125px;
+		font-size: 13px;
+		font-weight: 700;
 	}
 
-	.fa-3x {
-		font-size: 2.2em;
+	nav li .fa {
+		display: none;
 	}
 
 	section .img-container {
 		min-height: 66vh;
 	}
 
+	#registry li {
+		height: calc((100vh - 50px) / 4);
+	}
+
 	#registry img {
-		width: 40vw;
+		width: 45vw;
 	}
 
 }

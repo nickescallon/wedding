@@ -107,7 +107,7 @@ function hideLetters() {
 
 			moveLlucci();
 		}, 1000)
-		
+
 		return;
 	}
 
@@ -124,7 +124,7 @@ function moveLlucci() {
 	var random = Math.floor(Math.random() * lettersToDelete.length);
 	var startIndex = llucci.splice(random, 1)[0];
 	if (startIndex === undefined) {
-		// elems.brand.style.color = 'tomato';	
+		// elems.brand.style.color = 'tomato';
 		return;
 	}
 
