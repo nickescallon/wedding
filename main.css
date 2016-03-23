@@ -185,6 +185,11 @@ section .content {
 	margin: 2vw;
 }
 
+section .content-box {
+	width: 100vw;
+	border: 1px solid #DBCBAB;
+}
+
 #home-content {
 	position: fixed;
 	bottom: 0;
@@ -258,6 +263,17 @@ section .content {
 
 .calendar-text { margin-top: .3em; }
 
+.row {
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
 
 @media (min-width: 550px) {
 	#home {
@@ -311,6 +327,27 @@ section .content {
 
 	#registry img {
 		width: 45vw;
+	}
+
+	.row {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.content-box {
+		/*display: flex;*/
+		flex: 1;
+		margin: 5px;	
+		/*min-width: 24vw;*/
+		/*max-width: 32vw;*/
+		/*max-height: 20vw;*/
+		/*min-width: 200px;*/
+		/*min-height: 200px;*/
+		/*margin: 5px;*/
+		box-shadow: rgba(0,0,0,0.5) 0 3px 3px;	
 	}
 
 }
