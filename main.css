@@ -13,6 +13,7 @@ body {
 	/*small size background: */
 	/*background-color: #797570;*/
 	/*color: #DBCBAB;*/
+    background-color: rgb(240,238,239);
 	color: #797570;
 }
 
@@ -174,22 +175,30 @@ section .content-container {
 	flex-direction: column;
 }
 
-/*section .heading {
-	color: white;
-	background-color: #DBCBAB;
+section .heading {
+	color: #DBCBAB;
+	background-color: white;
 	text-align: center;
 	padding: .3em;
-}*/
+}
 
 section .content {
-	/*margin: 1.5vw;*/
-	padding: 0 1.5vw;
+	text-align: center;
+	max-width: 800px;
 }
 
 section .content-box {
-	width: 100vw;
-	border-bottom: 1px solid #DBCBAB; /*MAYBE ONLY THIS BORDER IN MOBILE*/
+	/*width: 100vw;*/
+	/*border-bottom: 1px solid #DBCBAB;*/ /*MAYBE ONLY THIS BORDER IN MOBILE*/
 	text-align: center;
+	/*max-width: 800px;*/
+	/*padding-bottom: 15px;*/
+	background-color: white;
+	margin: 10px 5px;
+}
+
+.content-box, .content p {
+	padding: 0 15px;
 }
 
 section .content-box h1 {
@@ -203,9 +212,9 @@ section .content-box a {
 	font-weight: bold;
 }
 
-.secondary {
-	color: white;
-	background-color: #797570;
+section .content-box.secondary {
+	/*color: white;*/
+	background-color: transparent;
 }
 
 #home-content {
@@ -312,7 +321,7 @@ section .content-box a {
 	#main {
 		padding-top: 50px;
 		height: calc(100vh - 50px);
-		font-size: 13px;
+		font-size: 16px;
 	}
 
 	#brand {
@@ -356,17 +365,18 @@ section .content-box a {
 		flex-wrap: wrap;
 	}
 
-	.content-box {
+	section .content-box {
 		/*display: flex;*/
 		flex: 1;
 		/*margin: 5px;	*/
-		/*min-width: 24vw;*/
-		/*max-width: 32vw;*/
+		/*min-width: 50vw;*/
+		max-width: 21vw;
 		/*max-height: 20vw;*/
 		/*min-width: 200px;*/
 		/*min-height: 200px;*/
 		/*margin: 5px;*/
 		/*box-shadow: rgba(0,0,0,0.5) 0 3px 3px;	*/
+		border-bottom: none;
 	}
 
 }
