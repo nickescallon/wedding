@@ -176,38 +176,76 @@ section .content-container {
 	flex-direction: column;
 }
 
-section .heading {
+section .content-box-lg.heading {
 	color: #DBCBAB;
 	background-color: white;
-	text-align: center;
-	padding: .3em;
+
+	webkit-justify-content: center;
+	justify-content: center;
+	padding: 5px 0px;
+	font-size: 20px;
+	font-weight: bold;
+
+	border: 1px solid #DBCBAB;
 }
 
 section .content {
 	text-align: center;
-	max-width: 800px;
+	max-width: 1000px;
 }
 
-section .content-box {
+section .content > table {
+	text-align: left;
+	border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.label {
+	text-align: right;
+}
+
+/*different classes for different responsive ooptions*/
+section .content-box, section .content-box-lg {
 	/*width: 100vw;*/
 	/*border-bottom: 1px solid #DBCBAB;*/ /*MAYBE ONLY THIS BORDER IN MOBILE*/
 	text-align: center;
+	/*width: 100%;*/
 	/*max-width: 800px;*/
 	/*padding-bottom: 15px;*/
 	background-color: white;
-	margin: 10px 5px;
+	margin: 0px 7.5px;
+	padding-bottom: 15px;
+
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex: 1;
+	flex: 1;
+
+	webkit-justify-content: flex-start;
+	justify-content: flex-start;
+
+	-webkit-align-items: center;
+	align-items: center;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
 }
 
-.content-box, .content p {
+section .content-box:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+section p {
 	padding: 0 15px;
 }
 
-section .content-box h1 {
+section h1 {
 	/*text-decoration: underline;*/
 	color: #DBCBAB;
 }
 
-section .content-box a {
+section a {
 	/*text-decoration: underline;*/
 	color: #797570;
 	font-weight: bold;
@@ -292,6 +330,7 @@ section .content-box.secondary {
 .calendar-text { margin-top: .3em; }
 
 .row {
+	margin: 15px;
 	display: -webkit-flex;
 	display: flex;
 
@@ -303,7 +342,7 @@ section .content-box.secondary {
 }
 
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
 	#home {
 		background: url(/couple6.jpg) no-repeat center;
 		background-size: cover;
@@ -370,13 +409,18 @@ section .content-box.secondary {
 		flex: 1;
 		/*margin: 5px;	*/
 		/*min-width: 50vw;*/
-		max-width: 21vw;
+		/*max-width: 21vw;*/
 		/*max-height: 20vw;*/
 		/*min-width: 200px;*/
 		/*min-height: 200px;*/
 		/*margin: 5px;*/
 		/*box-shadow: rgba(0,0,0,0.5) 0 3px 3px;	*/
 		border-bottom: none;
+		/*margin-bottom: 0;*/
+	}
+
+	section .content-box:not(:last-child) {
+		margin-bottom: 0;
 	}
 
 }
