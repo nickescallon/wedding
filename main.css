@@ -187,6 +187,7 @@ section .content-box-lg.heading {
 	font-weight: bold;
 
 	border: 1px solid #DBCBAB;
+	/*margin: 0*/;
 }
 
 section .content {
@@ -194,10 +195,15 @@ section .content {
 	max-width: 1000px;
 }
 
-section .content > table {
+section table {
 	text-align: left;
 	border-collapse: separate;
   border-spacing: 10px;
+}
+
+section ul {
+	text-align: left;
+	padding-right: 15px;
 }
 
 .label {
@@ -214,7 +220,7 @@ section .content-box, section .content-box-lg {
 	/*max-width: 800px;*/
 	/*padding-bottom: 15px;*/
 	background-color: white;
-	margin: 0px 7.5px;
+	margin: 7.5px;
 	padding-bottom: 15px;
 
 	display: -webkit-flex;
@@ -233,10 +239,6 @@ section .content-box, section .content-box-lg {
 	flex-direction: column;
 }
 
-section .content-box:not(:last-child) {
-	margin-bottom: 15px;
-}
-
 section p {
 	padding: 0 15px;
 }
@@ -244,6 +246,9 @@ section p {
 section h1 {
 	/*text-decoration: underline;*/
 	color: #DBCBAB;
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-size: 1.25em;
 }
 
 section a {
@@ -331,7 +336,7 @@ section .content-box.secondary {
 .calendar-text { margin-top: .3em; }
 
 .row {
-	margin: 15px;
+	margin: 0px 15px;
 	display: -webkit-flex;
 	display: flex;
 
@@ -340,6 +345,10 @@ section .content-box.secondary {
 
 	-webkit-justify-content: center;
 	justify-content: center;
+}
+
+.row:last-child {
+	margin-bottom: 15px;
 }
 
 
@@ -407,10 +416,10 @@ section .content-box.secondary {
 
 	section .content-box {
 		/*display: flex;*/
-		flex: 1;
+		/*flex: 1;*/
 		/*margin: 5px;	*/
-		/*min-width: 50vw;*/
-		/*max-width: 21vw;*/
+		min-width: 250px;
+		max-width: 25vw;
 		/*max-height: 20vw;*/
 		/*min-width: 200px;*/
 		/*min-height: 200px;*/
@@ -419,9 +428,4 @@ section .content-box.secondary {
 		border-bottom: none;
 		/*margin-bottom: 0;*/
 	}
-
-	section .content-box:not(:last-child) {
-		margin-bottom: 0;
-	}
-
 }
