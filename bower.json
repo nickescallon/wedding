@@ -1,0 +1,22 @@
+{
+  "name": "wedding",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nickescallon/wedding",
+  "authors": [
+    "Nick Escallon <nickescallon@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.3",
+    "bootstrap-sass": "~3.3.6",
+    "fontawesome": "~4.6.1"
+  },
+  "overrides": {
+    "fontawesome": {
+      "comment": "note: don't want the vendor css.  using scss",
+      "main": [
+        "./fonts/*"
+      ]
+    }
+  }
+}
