@@ -10,26 +10,26 @@ angular.module('nc-wedding', [
   $stateProvider
     .state('home', {
       url: '/',
-      template: '<span>HOME</span'
+      templateUrl: 'home/home.template.html'
     })
     .state('itinerary', {
       url: '/itinerary',
-      template: '<span>itinerary</span'
+      templateUrl: 'itinerary/itinerary.template.html'
     })
     .state('travel', {
       url: '/travel',
-      template: '<span>travel</span'
+      templateUrl: 'travel/travel.template.html'
     })
     .state('activities', {
       url: '/activities',
-      template: '<span>activities</span'
+      templateUrl: 'acivities/acivities.template.html'
     })
     .state('photos', {
       url: '/photos',
-      template: '<span>photos</span'
+      templateUrl: 'photos/photos.template.html'
     })
     .state('registry', {
       url: '/registry',
-      template: '<span>registry</span'
+      templateUrl: 'registry/registry.template.html'
     })
 });

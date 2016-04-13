@@ -31,7 +31,15 @@ $color-text-accent: #DBCBAB;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../bower_components/fontawesome/scss/font-awesome";
 
+//BOOTSTRAP OVERRIDES
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+//END
+
 body,html {
+  position: relative;
   height: 100%;
 }
 
@@ -43,8 +51,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url('/images/couple3.jpg') no-repeat center center;
-  background-size: cover;
 }
 
 .wide img {
@@ -71,12 +77,24 @@ body {
 }
 
 .line {
-  padding-top:5px;
-  white-space:no-wrap;
-  overflow:hidden;
-  text-align:center;
+  height: 1em;
+  margin-top: 35px;
 
-  hr {
-    color: $color-text-accent;
+  &.line-primary {
+    background-color: $color-text-accent;
+    border-top: .4em solid $color-bg-primary;
+    border-bottom: .4em solid $color-bg-primary;
   }
 }
+
+h1.primary, h2.primary, h3.primary {
+  color: $color-text-accent;
+  margin-bottom: 20px;
+}
+
+ui-view {
+  height: 100%;
+}
+
+@import "../app/home/home";
+@import "../app/itinerary/itinerary";

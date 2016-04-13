@@ -58,7 +58,7 @@ gulp.task('appJs', function() {
 
 /* STYLES */
 var sassOptions = {
-      outputStyle: 'compressed'
+      // outputStyle: 'compressed'
     },
     autoprefixerOptions = {
       browsers: [
@@ -145,7 +145,7 @@ gulp.task('build', [
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(sources.app.js, ['appJs']);
-  gulp.watch(sources.app.sass, ['appStyles']);
+  gulp.watch(sources.app.sass.concat('./app/**/*.scss'), ['appStyles']);
   gulp.watch(sources.images, ['images']);
   gulp.watch(sources.index, ['index']);
   gulp.watch(sources.templates, ['templates']);
