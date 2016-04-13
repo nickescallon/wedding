@@ -9,7 +9,8 @@
   "dependencies": {
     "angular": "~1.5.3",
     "bootstrap-sass": "~3.3.6",
-    "fontawesome": "~4.6.1"
+    "fontawesome": "~4.6.1",
+    "angular-ui-router": "~0.2.18"
   },
   "overrides": {
     "fontawesome": {

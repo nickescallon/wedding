@@ -41,7 +41,7 @@ gulp.task('appJs', function() {
   gulp.src(mainBowerFiles('**/*.js').concat(sources.app.js))
   .pipe(concat('app.js'))
   .pipe(ngAnnotate())
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulp.dest(destinations.js))
   .pipe(livereload());
 });
@@ -114,6 +114,19 @@ gulp.task('index', function() {
   .pipe(livereload());
 });
 
+var html2JsOptions = {
+  moduleName: 'nc-wedding.templates',
+  standAlone: true
+};
+
+gulp.task('templates', function() {
+  gulp
+    .src(sources.templates)
+    .pipe(ngHtml2Js(html2JsOptions))
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest(destinations.js));
+});
+
 /* GULP */
 
 //build
@@ -124,6 +137,7 @@ gulp.task('build', [
   'appStyles',
   'images',
   'fonts',
+  'templates',
   'index'
 ]);
 
@@ -134,6 +148,7 @@ gulp.task('watch', function() {
   gulp.watch(sources.app.sass, ['appStyles']);
   gulp.watch(sources.images, ['images']);
   gulp.watch(sources.index, ['index']);
+  gulp.watch(sources.templates, ['templates']);
   gulp.watch('./bower.json', ['vendorJs', 'vendorStyles', 'fonts']);
 });
 

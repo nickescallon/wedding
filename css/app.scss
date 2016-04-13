@@ -1,3 +1,82 @@
+$color-bg-primary: white;
+$color-text-primary: #797570;
+$color-text-accent: #DBCBAB;
+
+// BOOTSTRAP VARS
+
+// $navbar-default-color:             $color-text-primary !default;
+// $navbar-default-bg:                $color-bg-primary !default;
+// $navbar-default-border:            transparent !default;
+
+// // Navbar links
+// $navbar-default-link-color:                $color-text-primary !default;
+// $navbar-default-link-hover-color:          #333 !default;
+// $navbar-default-link-hover-bg:             transparentize($color-text-accent, .85) !default;
+// $navbar-default-link-active-color:         #555 !default;
+// $navbar-default-link-active-bg:            transparentize($color-text-accent, .7) !default;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
+
+// // Navbar brand label
+// $navbar-default-brand-color:               $color-text-accent !default;
+// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+// $navbar-default-brand-hover-bg:            transparent !default;
+
+// // Navbar toggle
+// $navbar-default-toggle-hover-bg:           #ddd !default;
+// $navbar-default-toggle-icon-bar-bg:        #888 !default;
+// $navbar-default-toggle-border-color:       #ddd !default;
+
 // Import bootstrap / font-awesome
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../bower_components/fontawesome/scss/font-awesome";
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.wide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('/images/couple3.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.wide img {
+  width:100%;
+}
+
+.caption {
+  background: $color-bg-primary;
+  color: $color-text-accent;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+}
+
+.logo {
+  color: $color-text-accent;
+  font-weight:800;
+  font-size:14pt;
+  padding:10px;
+  text-align:right;
+}
+
+.line {
+  padding-top:5px;
+  white-space:no-wrap;
+  overflow:hidden;
+  text-align:center;
+
+  hr {
+    color: $color-text-accent;
+  }
+}
