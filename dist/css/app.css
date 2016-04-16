@@ -8103,13 +8103,34 @@ button.close {
 .container-fluid {
   margin: 0;
   padding: 0; }
+  .container-fluid .content {
+    max-width: 1000px;
+    margin: auto; }
+
+.row-fluid.section {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px; }
+
+.row-fluid.section:last-child {
+  padding-bottom: 15px; }
+
+.row {
+  margin: 0; }
+
+p {
+  padding: 0px 15px;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; }
 
 body, html {
   position: relative;
   height: 100%; }
 
 body {
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif; }
 
 .wide {
   position: relative;
@@ -8120,7 +8141,7 @@ body {
   width: 100%; }
 
 .caption {
-  background: white;
+  background: #f0eeef;
   color: #DBCBAB;
   position: absolute;
   bottom: 0;
@@ -8140,12 +8161,53 @@ body {
   margin-top: 35px; }
   .line.line-primary {
     background-color: #DBCBAB;
-    border-top: 0.4em solid white;
-    border-bottom: 0.4em solid white; }
+    border-top: 0.4em solid #f0eeef;
+    border-bottom: 0.4em solid #f0eeef; }
 
-h1.primary, h2.primary, h3.primary {
-  color: #DBCBAB;
-  margin-bottom: 20px; }
+.separator {
+  width: 100%;
+  margin: 20px auto 15px;
+  position: relative;
+  height: 1px; }
+
+.separator:after {
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  width: 100%;
+  left: 0; }
+
+.primary {
+  background: white;
+  color: #797570; }
+  .primary h2, .primary h2, .primary h3, .primary h4 {
+    background: white;
+    color: #DBCBAB; }
+  .primary .separator:after {
+    background: #797570;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(35%, rgba(0, 0, 0, 0.09)), color-stop(70%, rgba(0, 0, 0, 0.09)), color-stop(100%, transparent));
+    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(35%, rgba(0, 0, 0, 0.09)), color-stop(70%, rgba(0, 0, 0, 0.09)), to(transparent));
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%); }
+
+.inverse {
+  background: #797570;
+  color: #f0eeef; }
+  .inverse h2, .inverse h2, .inverse h3, .inverse h4 {
+    background: #797570;
+    color: #DBCBAB; }
+  .inverse a {
+    color: #DBCBAB; }
+  .inverse .separator:after {
+    background: #f0eeef;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(35%, rgba(255, 255, 255, 0.09)), color-stop(70%, rgba(255, 255, 255, 0.09)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.09) 35%, rgba(255, 255, 255, 0.09) 70%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(35%, rgba(255, 255, 255, 0.09)), color-stop(70%, rgba(255, 255, 255, 0.09)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.09) 35%, rgba(255, 255, 255, 0.09) 70%, rgba(255, 255, 255, 0) 100%); }
+
+.box {
+  padding: 15px; }
 
 ui-view {
   height: 100%; }
