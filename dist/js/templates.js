@@ -6,7 +6,9 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('activities/activities.template.html',
-    'activities.template.html\n' +
+    '<div class="text-center">\n' +
+    '  <h1>COMING SOON</h1>\n' +
+    '</div>\n' +
     '');
 }]);
 })();
@@ -18,29 +20,12 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '      </button>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -87,7 +72,7 @@ module.run(['$templateCache', function($templateCache) {
     '              </p>\n' +
     '\n' +
     '              <p>\n' +
-    '                We\'ve outlined the key dates below, and have more details the "Activities" page.\n' +
+    '                We\'ve outlined the key dates below, and will soon have more details on the <a href ui-sref="activities">Activities</a> page.\n' +
     '              </p>\n' +
     '            </div>\n' +
     '          </div>\n' +
@@ -145,7 +130,7 @@ module.run(['$templateCache', function($templateCache) {
     '              <p>\n' +
     '                We\'ll be spending one night there.\n' +
     '              <p>\n' +
-    '                Please check our "Travel" section for suggested flights from Capetown to Johannesburg.\n' +
+    '                Please check our <a href ui-sref="travel">Travel</a> section for suggested flights from Capetown to Johannesburg.\n' +
     '            </div>\n' +
     '          </div>\n' +
     '\n' +
@@ -153,7 +138,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <div class="box">\n' +
     '              <h4>OCT 12</h4>\n' +
     '              <p>\n' +
-    '                We\'ll be departing Johannesrburg for Safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>.\n' +
+    '                We\'ll be departing <a href="//www.sun-city-south-africa.com/">Sun City</a> for Safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>.\n' +
     '              <p>\n' +
     '                We\'ll be spending two nights at <a href="//www.taugamelodge.co.za/" target="_blank">Tau</a>.\n' +
     '            </div>\n' +
@@ -226,12 +211,29 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '      </button>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -246,6 +248,9 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
+    '<div class="text-center">\n' +
+    '  <h1>COMING SOON</h1>\n' +
+    '</div>\n' +
     '');
 }]);
 })();
@@ -295,6 +300,66 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('travel/travel.template.html',
+    '<div id="travel" class="page">\n' +
+    '  <div class="wide"></div>\n' +
+    '\n' +
+    '  <div class="container-fluid">\n' +
+    '    <div class="text-center">\n' +
+    '\n' +
+    '      <div class="row-fluid section primary">\n' +
+    '        <div class="content">\n' +
+    '          <div class="row">\n' +
+    '\n' +
+    '            <div class="col-sm-8">\n' +
+    '\n' +
+    '              <div class="row">\n' +
+    '                <div class="col-md-8 col-md-offset-2">\n' +
+    '                  <h3 class="text-center">TRAVEL PLANS</h3>\n' +
+    '                  <div class="separator"></div>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                In order to facilitate the many travel arrangments you\'ll need to make, we\'re working with a travel agent, Mary Wilkinson.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                <strong>Please reach out to Mary as soon as possible</strong> so she can help you plan your trip.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                If you plan on attending the Safari portion of the trip, please make sure to RSVP as soon as possible\n' +
+    '                in order to guarantee a spot. We\'ll need to book these accomodations far in advance.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                <a href="/rsvp" target="_blank" class="btn btn-default">Click Here to RSVP</a>\n' +
+    '              </p>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="col-sm-4">\n' +
+    '              <div class="row">\n' +
+    '                <div class="col-md-8 col-md-offset-2">\n' +
+    '                  <h3 class="text-center">TRAVEL AGENT</h3>\n' +
+    '                  <div class="separator"></div>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '\n' +
+    '              <h4 class="text-primary">Mary Wilkinson</h4>\n' +
+    '              <h4>\n' +
+    '                <a href="mailto:mary@travelstudio.co.za">mary@travelstudio.co.za</a>\n' +
+    '              </h4>\n' +
+    '              <h4 class="text-primary">+27 012 3621806</h4>\n' +
+    '            </div>\n' +
+    '\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '\n' +
+    '</div>\n' +
     '');
 }]);
 })();

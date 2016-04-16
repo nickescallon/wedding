@@ -41,7 +41,7 @@ gulp.task('appJs', function() {
   gulp.src(mainBowerFiles('**/*.js').concat(sources.app.js))
   .pipe(concat('app.js'))
   .pipe(ngAnnotate())
-  // .pipe(uglify())
+  .pipe(uglify())
   .pipe(gulp.dest(destinations.js))
   .pipe(livereload());
 });
@@ -58,7 +58,7 @@ gulp.task('appJs', function() {
 
 /* STYLES */
 var sassOptions = {
-      // outputStyle: 'compressed'
+      outputStyle: 'compressed'
     },
     autoprefixerOptions = {
       browsers: [
