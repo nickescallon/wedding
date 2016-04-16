@@ -8121,8 +8121,9 @@ p {
   padding: 0px 15px;
   font-weight: 300; }
 
-h1, h2, h3, h4, h5, h6, .navbar {
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6, .navbar, .logo {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #DBCBAB; }
 
 body, html {
   position: relative;
@@ -8132,10 +8133,15 @@ body {
   padding-top: 50px;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif; }
 
+.page {
+  height: 100%;
+  width: 100%; }
+
 .wide {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 70%;
+  background-size: cover; }
 
 .wide img {
   width: 100%; }
@@ -8151,7 +8157,6 @@ body {
 
 .logo {
   color: #DBCBAB;
-  font-weight: 800;
   font-size: 14pt;
   padding: 10px;
   text-align: right; }
@@ -8179,11 +8184,8 @@ body {
   left: 0; }
 
 .primary {
-  background: white;
+  background: #f0eeef;
   color: #797570; }
-  .primary h2, .primary h2, .primary h3, .primary h4 {
-    background: white;
-    color: #DBCBAB; }
   .primary .separator:after {
     background: #797570;
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(35%, rgba(0, 0, 0, 0.09)), color-stop(70%, rgba(0, 0, 0, 0.09)), color-stop(100%, transparent));
@@ -8194,9 +8196,6 @@ body {
 .inverse {
   background: #797570;
   color: #f0eeef; }
-  .inverse h2, .inverse h2, .inverse h3, .inverse h4 {
-    background: #797570;
-    color: #DBCBAB; }
   .inverse a {
     color: #DBCBAB; }
   .inverse .separator:after {
@@ -8214,11 +8213,45 @@ ui-view {
 
 #home {
   background: url("/images/couple6.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative; }
+
+#itinerary .wide {
+  background: url(/images/mv-banner3.jpg) no-repeat center center;
   background-size: cover; }
 
-#itinerary {
-  height: 100%; }
-  #itinerary .wide {
-    height: 70%;
-    background: url(/images/mv-banner3.jpg) no-repeat center center;
-    background-size: cover; }
+#photos .wide {
+  background: url(/images/mv-banner3.jpg) no-repeat center center;
+  background-size: cover; }
+
+#registry ul {
+  margin: 0;
+  padding: 0; }
+
+#registry li {
+  list-style: none;
+  width: 100vw;
+  height: -webkit-calc(25vh - 12.5px);
+  height: calc(25vh - 12.5px); }
+
+#registry li:nth-child(even) {
+  background: black; }
+
+#registry li:nth-child(odd) {
+  background: white; }
+
+#registry a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center; }
+
+#registry img {
+  width: 50vw; }

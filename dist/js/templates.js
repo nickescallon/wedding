@@ -18,8 +18,27 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
-    '<div id="itinerary">\n' +
+    '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
     '\n' +
     '  <div class="container-fluid">\n' +
@@ -29,7 +48,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="content">\n' +
     '          <div class="row">\n' +
     '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center inverse">WELCOME</h3>\n' +
+    '              <h3 class="text-center">WELCOME</h3>\n' +
     '              <div class="separator"></div>\n' +
     '            </div>\n' +
     '          </div>\n' +
@@ -63,7 +82,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="row">\n' +
     '          <div class="content">\n' +
     '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center inverse">KEY DATES</h3>\n' +
+    '              <h3 class="text-center">KEY DATES</h3>\n' +
     '              <div class="separator"></div>\n' +
     '            </div>\n' +
     '          </div>\n' +
@@ -126,12 +145,11 @@ module.run(['$templateCache', function($templateCache) {
     '        </div>\n' +
     '      </div>\n' +
     '\n' +
-    '\n' +
     '      <div class="row-fluid section primary">\n' +
-    '      <div class="content">\n' +
+    '        <div class="content">\n' +
     '          <div class="row">\n' +
     '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center primary">OUR ITINERARY</h3>\n' +
+    '              <h3 class="text-center">OUR ITINERARY</h3>\n' +
     '              <div class="separator"></div>\n' +
     '            </div>\n' +
     '          </div>\n' +
@@ -191,14 +209,7 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="wide">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
-    '</div>\n' +
+  $templateCache.put('photos/photos.template.html',
     '');
 }]);
 })();
@@ -246,19 +257,32 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('photos/photos.template.html',
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('registry/registry.template.html',
+    '<div id="registry" class="page">\n' +
+    '  <ul>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="//www.crateandbarrel.com/gift-registry/nicolas-escallon-and-chiara-castellucci/r5496614">\n' +
+    '        <img src="/images/cb-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="//www1.bloomingdales.com/registry/wedding/guest/?registryId=6560559">\n' +
+    '        <img src="/images/bl-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="https://secure.williams-sonoma.com/registry/2lcbclwsvd/registry-list.html">\n' +
+    '        <img src="/images/ws-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="https://www.amazon.com/gp/registry/wedding/I2IM8OFIT19K">\n' +
+    '        <img src="/images/am-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '  </ul>\n' +
+    '</div>\n' +
     '');
 }]);
 })();

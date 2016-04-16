@@ -1,0 +1,38 @@
+#registry {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    width: 100vw;
+    height: calc(25vh - 12.5px);
+  }
+
+  li:nth-child(even) {
+    background: black;
+  }
+
+  li:nth-child(odd) {
+    background: white;
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  img {
+    width: 50vw;
+  }
+}
