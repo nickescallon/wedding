@@ -18,12 +18,29 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '        <span class="icon-bar"></span>\n' +
+    '      </button>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -90,7 +107,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <div class="row">\n' +
     '\n' +
-    '          <div class="col-lg-3 col-md-6 text-center">\n' +
+    '          <div class="col-lg-3 col-sm-6 text-center">\n' +
     '            <div class="box">\n' +
     '              <h4>OCT 9</h4>\n' +
     '              <p>\n' +
@@ -104,7 +121,7 @@ module.run(['$templateCache', function($templateCache) {
     '          </div>\n' +
     '\n' +
     '\n' +
-    '          <div class="col-lg-3 col-md-6 text-center">\n' +
+    '          <div class="col-lg-3 col-sm-6 text-center">\n' +
     '            <div class="box">\n' +
     '              <h4>OCT 10</h4>\n' +
     '              <p>\n' +
@@ -119,7 +136,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '          </div>\n' +
     '\n' +
-    '          <div class="col-lg-3 col-md-6 text-center">\n' +
+    '          <div class="col-lg-3 col-sm-6 text-center">\n' +
     '            <div class="box">\n' +
     '              <h4>OCT 11</h4>\n' +
     '              <p>\n' +
@@ -132,7 +149,7 @@ module.run(['$templateCache', function($templateCache) {
     '            </div>\n' +
     '          </div>\n' +
     '\n' +
-    '          <div class="col-lg-3 col-md-6 text-center">\n' +
+    '          <div class="col-lg-3 col-sm-6 text-center">\n' +
     '            <div class="box">\n' +
     '              <h4>OCT 12</h4>\n' +
     '              <p>\n' +
@@ -209,7 +226,14 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('photos/photos.template.html',
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
     '');
 }]);
 })();
@@ -221,31 +245,7 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '        <span class="icon-bar"></span>\n' +
-    '      </button>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
-    '</div>\n' +
+  $templateCache.put('photos/photos.template.html',
     '');
 }]);
 })();
