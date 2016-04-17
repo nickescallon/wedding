@@ -42,6 +42,38 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -208,38 +240,6 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
     '<div class="text-center">\n' +
     '  <h1>COMING SOON</h1>\n' +
@@ -382,245 +382,259 @@ module.run(['$templateCache', function($templateCache) {
     '      <div class="flex-row section primary bg-secondary">\n' +
     '\n' +
     '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_rhonda.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Rhonda\'s Manor</h3>\n' +
-    '              <div class="separator"></div>\n' +
+    '          <a href="//www.rhondasmanor.co.za/" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_rhonda.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">Rhonda\'s Manor</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
     '            </div>\n' +
-    '          </div>\n' +
     '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
     '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">Sea Point</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">$185 - $240/night</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">\n' +
-    '                  <ul>\n' +
-    '                    <li><p>We spent a week here in 2015 and it was fantastic.</p></li>\n' +
-    '                    <li><p>Centrally located, with a parking garage.</p></li>\n' +
-    '                    <li><p>Delicious home-made breakfast every morning</p></li>\n' +
-    '                    <li><p>Minimum stay required</p></li>\n' +
-    '                  </ul>\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Sea Point</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
     '                </div>\n' +
-    '              </div>\n' +
     '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_president.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">President Hotel</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">Bantry Bay</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">TBD</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_peninsula.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Peninsula Hotel</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">Sea Point</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">$200 - $300/night</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_radisson.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Radisson Blu Hotel</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">Waterfront</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">TBD</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_12_apostles.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">12 Apostles</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">Bantry Bay</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">TBD</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_airbnb.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">AirBnB</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">All Over Cape Town</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left"><a href="https://www.airbnb.com/s/Cape-Town--South-Africa?s_tag=XJQxZgnP">Variable</a></div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">\n' +
-    '                  <ul>\n' +
-    '                    <li><p>Affordable and Luxurious</p></li>\n' +
-    '                    <li><p>We suggest looking in Bantry Bay, Camps Bay, Seapoint, and Fresnaye</p></li>\n' +
-    '                  </ul>\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">$185 - $240/night</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
     '                </div>\n' +
-    '              </div>\n' +
     '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">\n' +
+    '                    <ul>\n' +
+    '                      <li><p>We spent a week here in 2015 and it was fantastic.</p></li>\n' +
+    '                      <li><p>Centrally located, with a parking garage.</p></li>\n' +
+    '                      <li><p>Delicious home-made breakfast every morning</p></li>\n' +
+    '                      <li><p>Minimum stay required</p></li>\n' +
+    '                    </ul>\n' +
+    '                  </div>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
     '            </div>\n' +
-    '          </div>\n' +
+    '          </a>\n' +
     '        </div>\n' +
     '\n' +
     '        <div class="flex-item">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_house.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">House Rentals</h3>\n' +
-    '              <div class="separator"></div>\n' +
+    '          <a href="//www.presidenthotel.co.za/" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_president.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">President Hotel</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
     '            </div>\n' +
-    '          </div>\n' +
     '\n' +
-    '          <div class="row primary">\n' +
-    '            <div class="col-xs-12">\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
     '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">All Over Cape Town</div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left"><a href="http://www.property24.com/to-rent">Variable</a></div>\n' +
-    '                <br>\n' +
-    '                <br>\n' +
-    '              </div>\n' +
-    '\n' +
-    '              <div class="row">\n' +
-    '                <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
-    '                <div class="col-xs-9 text-left">\n' +
-    '                  <ul>\n' +
-    '                    <li><p>Affordable and Luxurious</p></li>\n' +
-    '                    <li><p>We suggest looking in Bantry Bay, Camps Bay, Seapoint, and Fresnaye</p></li>\n' +
-    '                  </ul>\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Bantry Bay</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
     '                </div>\n' +
-    '              </div>\n' +
     '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">TBD</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
     '            </div>\n' +
-    '          </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//peninsula.co.za/" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_peninsula.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">Peninsula Hotel</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Sea Point</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">$200 - $300/night</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//www.radissonblu.com/en/hotel-capetown" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_radisson.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">Radisson Blu Hotel</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Waterfront</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">TBD</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//www.12apostleshotel.com/" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_12_apostles.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">12 Apostles</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Bantry Bay</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">TBD</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//www.airbnb.com/s/Cape-Town--South-Africa?s_tag=XJQxZgnP" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_airbnb.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">AirBnB</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">All Over Cape Town</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left"><a href="//www.airbnb.com/s/Cape-Town--South-Africa?s_tag=XJQxZgnP">Variable</a></div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">\n' +
+    '                    <ul>\n' +
+    '                      <li><p>Affordable and Luxurious</p></li>\n' +
+    '                      <li><p>We suggest looking in Bantry Bay, Camps Bay, Seapoint, and Fresnaye</p></li>\n' +
+    '                    </ul>\n' +
+    '                  </div>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//www.property24.com/to-rent" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel_house.jpg"/>\n' +
+    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '                <h3 class="text-center">House Rentals</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">All Over Cape Town</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left"><a href="//www.property24.com/to-rent">Variable</a></div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">\n' +
+    '                    <ul>\n' +
+    '                      <li><p>Affordable and Luxurious</p></li>\n' +
+    '                      <li><p>We suggest looking in Bantry Bay, Camps Bay, Seapoint, and Fresnaye</p></li>\n' +
+    '                    </ul>\n' +
+    '                  </div>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
     '        </div>\n' +
     '\n' +
     '\n' +

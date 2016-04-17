@@ -229,6 +229,12 @@ ui-view {
 .flex-item {
   flex: 1 1 fit-content;
   margin: 15px;
+  transition: all .5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 5px 0px rgba(120,120,120,1);
+  }
 }
 
 .img-responsive {
@@ -247,14 +253,15 @@ ui-view {
   .navbar-toggle {
     display: none;
   }
+  #travel {
+    .flex-row {
+      max-height: 1400px;
+    }
 
-  .flex-row {
-    max-height: 2000px;
-  }
-
-  .flex-item {
-    width: 45%;
-    margin: 15px;
+    .flex-item {
+      width: 30%;
+      margin: 15px;
+    }
   }
 
   #travel, #itinerary, #activities {
@@ -265,27 +272,28 @@ ui-view {
 }
 
 @media (min-width: 1000px) {
+  #travel {
+    .flex-row {
+      max-height: 1400px;
+    }
 
-  .flex-row {
-    max-height: 1400px;
+    .flex-item {
+      width: 30%;
+      margin: 15px;
+    }
   }
-
-  .flex-item {
-    width: 30%;
-    margin: 15px;
-  }
-
 }
 
 @media (min-width: 1400px) {
+  #travel {
+    .flex-row {
+      max-height: 1200px;
+    }
 
-  .flex-row {
-    max-height: 1200px;
-  }
-
-  .flex-item {
-    width: 23%;
-    margin: 15px;
+    .flex-item {
+      width: 23%;
+      margin: 15px;
+    }
   }
 
 }
