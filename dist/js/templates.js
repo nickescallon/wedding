@@ -23,6 +23,25 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -177,25 +196,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
     '</div>\n' +
     '');
 }]);
