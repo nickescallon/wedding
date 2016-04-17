@@ -60,12 +60,18 @@ $navbar-height-mobile: 30px;
   }
 }
 
-.row-fluid {
-  &.section {
+// .row-fluid {
+//   &.section {
+//     padding-top: 7.5px;
+//     padding-bottom: 15px;
+//   }
+// }
+
+.section {
+    width: 100%;
     padding-top: 7.5px;
     padding-bottom: 15px;
   }
-}
 
 .row {
   margin: 0;
