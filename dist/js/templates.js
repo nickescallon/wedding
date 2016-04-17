@@ -361,7 +361,7 @@ module.run(['$templateCache', function($templateCache) {
     '              </p>\n' +
     '\n' +
     '              <p>\n' +
-    '                <a href="/rsvp" target="_blank" class="btn btn-default">Click Here to RSVP</a>\n' +
+    '                <a href ui-sref="rsvp" class="btn btn-default">Click Here to RSVP</a>\n' +
     '              </p>\n' +
     '            </div>\n' +
     '\n' +
@@ -677,6 +677,21 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('rsvp/rsvp.template.html',
+    '<div id="activities" class="page">\n' +
+    '  <iframe src="https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\n' +
     '</div>\n' +
     '');
 }]);

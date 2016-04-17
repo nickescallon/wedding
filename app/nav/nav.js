@@ -12,7 +12,8 @@ function NavController($state) {
     'travel',
     'activities',
     'photos',
-    'registry'
+    'registry',
+    'rsvp'
   ];
 
   this.go = function(stateName) {

@@ -41,9 +41,7 @@ angular.module('nc-wedding', [
     })
     .state('rsvp', {
       url: '/rsvp',
-      controller: function($window) {
-        $window.open('https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform', '_self');
-      }
+      templateUrl: 'rsvp/rsvp.template.html'
     })
 })
 
