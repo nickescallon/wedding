@@ -62,10 +62,11 @@ var sassOptions = {
     },
     autoprefixerOptions = {
       browsers: [
-        '> 1%',
+        '> 5%',
         'Safari >= 4',
         'Firefox >= 30',
-        'Android >= 4.2'
+        'Android >= 4.2',
+        'iOS > 7'
       ],
       cascade: false
     };
