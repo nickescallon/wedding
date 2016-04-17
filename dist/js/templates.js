@@ -8,8 +8,43 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('activities/activities.template.html',
     '<div id="activities" class="page">\n' +
     '  <div class="wide"></div>\n' +
-    '  <div class="text-center">\n' +
-    '    <h1>COMING SOON</h1>\n' +
+    '\n' +
+    '  <div class="container-fluid">\n' +
+    '    <div class="text-center">\n' +
+    '\n' +
+    '      <div class="row-fluid section primary">\n' +
+    '        <div class="content">\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '              <h3 class="text-center">SAFARI</h3>\n' +
+    '              <div class="separator"></div>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-xs-12">\n' +
+    '              <p>\n' +
+    '                After the wedding, we\'ll be going on safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                Going on safari is our most highly recommended activity, espeicially if you\'re visiting South Africa for the first time. We hope\n' +
+    '                you can join us.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                We\'ll need to reserve our spots on safari <strong>ASAP</strong> so we\'ve asked you to confirm your interest in our <a href ui-sref="rsvp">RSVP</a>.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                Please take some time to review the details below.\n' +
+    '              </p>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '    </div>\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -29,6 +64,38 @@ module.run(['$templateCache', function($templateCache) {
     '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
     '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
     '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -208,26 +275,9 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
+  $templateCache.put('photos/photos.template.html',
+    '<div class="text-center">\n' +
+    '  <h1>COMING SOON</h1>\n' +
     '</div>\n' +
     '');
 }]);
@@ -240,9 +290,31 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('photos/photos.template.html',
-    '<div class="text-center">\n' +
-    '  <h1>COMING SOON</h1>\n' +
+  $templateCache.put('registry/registry.template.html',
+    '<div id="registry" class="page">\n' +
+    '  <ul>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="//www.crateandbarrel.com/gift-registry/nicolas-escallon-and-chiara-castellucci/r5496614">\n' +
+    '        <img src="/images/cb-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="//www1.bloomingdales.com/registry/wedding/guest/?registryId=6560559">\n' +
+    '        <img src="/images/bl-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="https://secure.williams-sonoma.com/registry/2lcbclwsvd/registry-list.html">\n' +
+    '        <img src="/images/ws-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '    <li>\n' +
+    '      <a target="_blank"  href="https://www.amazon.com/gp/registry/wedding/I2IM8OFIT19K">\n' +
+    '        <img src="/images/am-logo.png"></img>\n' +
+    '      </a>\n' +
+    '    </li>\n' +
+    '  </ul>\n' +
     '</div>\n' +
     '');
 }]);
@@ -605,43 +677,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('registry/registry.template.html',
-    '<div id="registry" class="page">\n' +
-    '  <ul>\n' +
-    '    <li>\n' +
-    '      <a target="_blank"  href="//www.crateandbarrel.com/gift-registry/nicolas-escallon-and-chiara-castellucci/r5496614">\n' +
-    '        <img src="/images/cb-logo.png"></img>\n' +
-    '      </a>\n' +
-    '    </li>\n' +
-    '\n' +
-    '    <li>\n' +
-    '      <a target="_blank"  href="//www1.bloomingdales.com/registry/wedding/guest/?registryId=6560559">\n' +
-    '        <img src="/images/bl-logo.png"></img>\n' +
-    '      </a>\n' +
-    '    </li>\n' +
-    '    <li>\n' +
-    '      <a target="_blank"  href="https://secure.williams-sonoma.com/registry/2lcbclwsvd/registry-list.html">\n' +
-    '        <img src="/images/ws-logo.png"></img>\n' +
-    '      </a>\n' +
-    '    </li>\n' +
-    '    <li>\n' +
-    '      <a target="_blank"  href="https://www.amazon.com/gp/registry/wedding/I2IM8OFIT19K">\n' +
-    '        <img src="/images/am-logo.png"></img>\n' +
-    '      </a>\n' +
-    '    </li>\n' +
-    '  </ul>\n' +
     '</div>\n' +
     '');
 }]);
