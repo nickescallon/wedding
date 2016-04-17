@@ -1,9 +1,12 @@
 $color-bg-primary: white;
+$color-bg-secondary: rgb(240,238,239);
 $color-text-primary: #797570;
 $color-text-accent: #DBCBAB;
 
 $color-bg-inverse: #797570;
-$color-text-inverse: rgb(240,238,239);
+$color-text-inverse: $color-bg-secondary;
+
+$navbar-height-mobile: 30px;
 
 // BOOTSTRAP VARS
 
@@ -35,6 +38,18 @@ $color-text-inverse: rgb(240,238,239);
 @import "../bower_components/fontawesome/scss/font-awesome";
 
 //BOOTSTRAP OVERRIDES
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: $navbar-height-mobile;
+}
+.navbar {min-height: $navbar-height-mobile !important;}
+
+.navbar-toggle {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -48,12 +63,6 @@ $color-text-inverse: rgb(240,238,239);
 .row-fluid {
   &.section {
     padding-top: 7.5px;
-    padding-bottom: 7.5px;
-  }
-  // &.section:first-child {
-  //   padding-top: 0px;
-  // }
-  &.section:last-child {
     padding-bottom: 15px;
   }
 }
@@ -63,8 +72,16 @@ $color-text-inverse: rgb(240,238,239);
 }
 
 p {
-  padding: 0px 15px;
+  // padding: 0px 15px;
   font-weight: 300;
+}
+
+ul {
+  padding: 0;
+}
+
+li > p {
+  padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6, .navbar, .logo {
@@ -84,7 +101,7 @@ body,html {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: $navbar-height-mobile;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
@@ -96,7 +113,7 @@ body {
 .wide {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 50%;
   background-size: cover;
 }
 
@@ -178,13 +195,38 @@ body {
   }
 }
 
+.bg-secondary {
+  background: $color-bg-secondary;
+}
+
 .box {
-  padding: 15px;
-  // margin: 10px;
+  margin: 15px 0px;
 }
 
 ui-view {
   height: 100%;
+}
+
+// flex grid
+.flex-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  // width: 100%;
+  max-height: 5000px;
+}
+
+.flex-item {
+  flex: 1;
+  width: 100%;
+  margin: 15px;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 @import "../app/activities/activities";
@@ -196,9 +238,51 @@ ui-view {
 
 // set open sans for all h1s and merriwether for all else
 @media (min-width: 600px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .flex-row {
+    max-height: 2000px;
+  }
+
+  .flex-item {
+    flex: 1;
+    width: 45%;
+    margin: 15px;
+  }
+
   #travel, #itinerary, #activities {
     .wide {
       height: 70%;
     }
   }
+}
+
+@media (min-width: 1000px) {
+
+  .flex-row {
+    max-height: 1400px;
+  }
+
+  .flex-item {
+    flex: 1;
+    width: 30%;
+    margin: 15px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .flex-row {
+    max-height: 1200px;
+  }
+
+  .flex-item {
+    flex: 1;
+    width: 23%;
+    margin: 15px;
+  }
+
 }

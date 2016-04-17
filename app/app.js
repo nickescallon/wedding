@@ -45,4 +45,8 @@ angular.module('nc-wedding', [
         $window.open('https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform', '_self');
       }
     })
+})
+
+.run(function($rootScope, $window) {
+  $rootScope.$on('$stateChangeStart', function() { $window.scrollTo(0,0) });
 });
