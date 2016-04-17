@@ -45,7 +45,8 @@ $navbar-height-mobile: 30px;
 .navbar {min-height: $navbar-height-mobile !important;}
 
 .navbar-toggle {
-  padding: 0;
+  margin: 0;
+  padding: 8px 15px;
   border: none;
   cursor: pointer;
 }
