@@ -162,32 +162,32 @@ module.run(['$templateCache', function($templateCache) {
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 4:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 4:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Depart Boston for Cape Town.</div>\n' +
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 5-8:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 5-8:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Activities/Tourism in Cape Town.</div>\n' +
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 9 - 10:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 9 - 10:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Drive to Stellenbosch for the wedding events and wine tastings.</div>\n' +
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 11:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 11:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Fly to Johannesburg.</div>\n' +
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 12 - 13:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 12 - 13:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Drive to Tau Game Lodge for Safari.</div>\n' +
     '          </div>\n' +
     '\n' +
     '          <div class="row">\n' +
-    '            <div class="col-xs-offset-3 col-xs-2 text-right"><strong>Oct 14:</strong></div>\n' +
+    '            <div class="col-xs-offset-1 col-xs-4 text-right"><strong>Oct 14:</strong></div>\n' +
     '            <div class="col-xs-6 text-left">Drive to Johannesburg and fly home.</div>\n' +
     '          </div>\n' +
     '        </div>\n' +
