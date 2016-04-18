@@ -77,38 +77,6 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -136,7 +104,7 @@ module.run(['$templateCache', function($templateCache) {
     '              </p>\n' +
     '\n' +
     '              <p>\n' +
-    '                We\'re planning on spending some time in Cape Town, hosting a classic south African Braai for the rehearsal dinner, and traveling\n' +
+    '                We\'re planning on spending some time in Cape Town, hosting a classic South African Braai for the rehearsal dinner, and traveling\n' +
     '                closer to Johannesburg in order to spend a few nights on Safari. While we ask that you join us on October 9th and 10th for the rehearsal\n' +
     '                and the wedding, please feel free to opt in or out of any of the other planned activities.\n' +
     '              </p>\n' +
@@ -191,7 +159,7 @@ module.run(['$templateCache', function($templateCache) {
     '                <h4>OCT 11</h4>\n' +
     '                <p>\n' +
     '                  If you\'re joining us for safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>,\n' +
-    '                  then today we\'ll be flying to Johannseburg, and immediately departing for the <a href="//www.sun-city-south-africa.com/">Sun City Resort.</a>\n' +
+    '                  then today we\'ll be flying to Johannesburg, and immediately departing for the <a href="//www.sun-city-south-africa.com/">Sun City Resort.</a>\n' +
     '                <p>\n' +
     '                  We\'ll be spending one night there.\n' +
     '                <p>\n' +
@@ -275,6 +243,38 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
     '<div class="text-center">\n' +
     '  <h1>COMING SOON</h1>\n' +
@@ -315,6 +315,21 @@ module.run(['$templateCache', function($templateCache) {
     '      </a>\n' +
     '    </li>\n' +
     '  </ul>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('rsvp/rsvp.template.html',
+    '<div id="activities" class="page">\n' +
+    '  <iframe src="https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\n' +
     '</div>\n' +
     '');
 }]);
@@ -677,21 +692,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('rsvp/rsvp.template.html',
-    '<div id="activities" class="page">\n' +
-    '  <iframe src="https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\n' +
     '</div>\n' +
     '');
 }]);
