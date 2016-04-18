@@ -163,7 +163,7 @@ module.run(['$templateCache', function($templateCache) {
     '                <p>\n' +
     '                  We\'ll be spending one night there.\n' +
     '                <p>\n' +
-    '                  Please check our <a href ui-sref="travel">Travel</a> section for suggested flights from Capetown to Johannesburg.\n' +
+    '                  Please check our <a href ui-sref="travel">Travel</a> section for suggested flights from Cape Town to Johannesburg.\n' +
     '              </div>\n' +
     '\n' +
     '              <div class="col-lg-3 col-sm-6 col-xs-12 text-center box">\n' +
