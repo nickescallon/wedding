@@ -4,7 +4,7 @@ angular.module('nc-wedding')
   return {
     restrict: 'A',
     link: function(scope, element) {
-      $(element).kinetic();
+      $(element).kinetic({triggerHardware: true});
     }
   }
 });
