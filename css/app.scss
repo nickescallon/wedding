@@ -79,8 +79,18 @@ $navbar-height-mobile: 30px;
 }
 
 p {
-  // padding: 0px 15px;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-weight: 300;
+}
+
+.fa {
+  color: $color-bg-inverse;
+}
+
+.fa-long-arrow-right {
+  margin: 0px 15px;
 }
 
 ul {
@@ -98,6 +108,10 @@ h1,h2,h3,h4,h5,h6, .navbar, .logo {
 
 .text-primary {
   color: $color-text-primary;
+}
+
+.text-accent {
+  color: $color-text-accent;
 }
 
 //END
@@ -241,8 +255,16 @@ ui-view {
   }
 }
 
+.flex-column {
+  padding: 15px;
+}
+
 .img-responsive {
   width: 100%;
+}
+
+#drag {
+  cursor: grab;
 }
 
 @import "../app/activities/activities";
