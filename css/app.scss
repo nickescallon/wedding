@@ -259,6 +259,19 @@ ui-view {
   padding: 15px;
 }
 
+// GENERALIZE THIS ONLY USED ONCE
+.drag-row {
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  > div {
+    min-width: 300px;
+  }
+}
+
 .img-responsive {
   width: 100%;
 }

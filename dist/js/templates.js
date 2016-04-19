@@ -65,10 +65,10 @@ module.run(['$templateCache', function($templateCache) {
     '        </div>\n' +
     '      </div>\n' +
     '\n' +
-    '      <div kinetic class="flex-row section primary bg-secondary" style="flex-direction: row; align-items: center; overflow-x: scroll; flex-wrap: nowrap; justify-content: flex-start;">\n' +
+    '      <div kinetic class="flex-row section primary bg-secondary drag-row">\n' +
     '\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
     '          <div>\n' +
     '            <p>First we\'ll take a bus to the airport from our hotels in wine country.</p>\n' +
@@ -79,7 +79,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-plane"></i></div>\n' +
     '          <div>\n' +
     '            <p>Then we\'ll catch a flight to Johannesburg.</p>\n' +
@@ -90,7 +90,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
     '          <div>\n' +
     '            <p>From the airport, we\'ll take another bus to the Sun City Resort</p>\n' +
@@ -100,7 +100,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-bed"></i></div>\n' +
     '          <div>\n' +
     '            <p>We\'ll spend one night in Sun City, enjoying the resort and splitting up the travel</p>\n' +
@@ -110,7 +110,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
     '          <div>\n' +
     '            <p>On the morning of the 12th, we\'ll head out to the Tau Game Lodge.</p>\n' +
@@ -122,7 +122,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
     '\n' +
-    '        <div class="flex-column text-center" style="min-width: 300px;">\n' +
+    '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-paw"></i></div>\n' +
     '          <div>\n' +
     '            <p>We\'ll spend 2 nights at Tau, and go on 4 multi-hour game drives!</p>\n' +
@@ -214,6 +214,25 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
     '</div>\n' +
     '');
 }]);
@@ -380,25 +399,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
     '</div>\n' +
     '');
 }]);
