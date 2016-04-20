@@ -89,11 +89,6 @@ p {
   color: $color-bg-inverse;
 }
 
-.fa-long-arrow-right {
-  // margin: 0px 15px;
-  padding: 0px 15px;
-}
-
 ul {
   padding: 0;
 }
@@ -262,6 +257,8 @@ ui-view {
 
 // GENERALIZE THIS ONLY USED ONCE
 .drag-row {
+  position: relative;
+  display: flex;
   flex-direction: row;
   align-items: center;
   overflow-x: scroll;
@@ -269,7 +266,12 @@ ui-view {
   justify-content: flex-start;
 
   > div {
-    min-width: 300px;
+
+    flex: 0 0 300px;
+  }
+
+  > i {
+    flex: 0 0 80px;
   }
 }
 
