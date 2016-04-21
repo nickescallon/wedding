@@ -7,7 +7,7 @@ $color-bg-inverse: #797570;
 $color-text-inverse: $color-bg-secondary;
 
 $navbar-height-mobile: 30px;
-
+$navbar-height-desktop: 50px;
 // BOOTSTRAP VARS
 
 // $navbar-default-color:             $color-text-primary !default;
@@ -39,7 +39,8 @@ $navbar-height-mobile: 30px;
 
 //BOOTSTRAP OVERRIDES
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:5px !important; padding-bottom:0 !important;
+    padding-top:5px !important;
+    padding-bottom:0 !important;
     height: $navbar-height-mobile;
 }
 .navbar {min-height: $navbar-height-mobile !important;}
@@ -292,9 +293,21 @@ ui-view {
 
 // set open sans for all h1s and merriwether for all else
 @media (min-width: 600px) {
+  // navbar changes
+  body {
+    padding-top: $navbar-height-desktop;
+  }
+  .navbar-nav > li > a, .navbar-brand {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    height: $navbar-height-desktop;
+  }
+  .navbar {min-height: $navbar-height-desktop !important;}
+
   .navbar-toggle {
     display: none;
   }
+
   #travel {
     .flex-row {
       max-height: 2000px;
