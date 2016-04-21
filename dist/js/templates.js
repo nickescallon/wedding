@@ -37,6 +37,25 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -229,25 +248,6 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('nav/nav.template.html',
     '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
     '  <div class="container">\n' +
@@ -268,6 +268,21 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '\n' +
     '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('photos/photos.template.html',
+    '<div class="text-center">\n' +
+    '  <h1>COMING SOON</h1>\n' +
     '</div>\n' +
     '');
 }]);
@@ -305,21 +320,6 @@ module.run(['$templateCache', function($templateCache) {
     '      </a>\n' +
     '    </li>\n' +
     '  </ul>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('photos/photos.template.html',
-    '<div class="text-center">\n' +
-    '  <h1>COMING SOON</h1>\n' +
     '</div>\n' +
     '');
 }]);
@@ -383,11 +383,7 @@ module.run(['$templateCache', function($templateCache) {
     '              </p>\n' +
     '\n' +
     '              <p>\n' +
-    '                Once everyone has confirmed their interest in safari via our <a href ui-sref="rsvp">RSVP</a>, we\'ll be making a deposit for the group for the entire package.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                <strong>Please keep this in mind, as committing, then backing out will come at a high cost</strong>.\n' +
+    '                Once everyone has confirmed their interest in safari via <a href ui-sref="rsvp">RSVP</a>, we will be making a non-refundable deposit for the group.\n' +
     '              </p>\n' +
     '\n' +
     '              <p>\n' +
@@ -413,8 +409,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
     '          <div>\n' +
-    '            <p>First we\'ll take a bus to the airport from our hotels in wine country.</p>\n' +
-    '            <p>~ $10 per person</p>\n' +
+    '            <p>First we will take a bus or rental cars to the airport from our hotel in wine country.</p>\n' +
     '            <br>\n' +
     '          </div>\n' +
     '        </div>\n' +
@@ -424,9 +419,12 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-plane"></i></div>\n' +
     '          <div>\n' +
-    '            <p>Then we\'ll catch a flight to Johannesburg.</p>\n' +
-    '            <p>~ $150 per person</p>\n' +
-    '            <br>\n' +
+    '            <p>Fly to Johannesburg.</p>\n' +
+    '            <p>\n' +
+    '              ~ $75 - $150 per person\n' +
+    '              <br>\n' +
+    '              (depending on the group size)\n' +
+    '            </p>\n' +
     '          </div>\n' +
     '        </div>\n' +
     '\n' +
@@ -436,7 +434,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
     '          <div>\n' +
     '            <p>From the airport, we\'ll take another bus to the Sun City Resort</p>\n' +
-    '            <p>~ $90 per person<br><strong>Covers all bus fees from here on</strong></p>\n' +
+    '            <p>~ $100 per person<br><strong>Covers all bus fees</strong></p>\n' +
     '          </div>\n' +
     '        </div>\n' +
     '\n' +
@@ -467,7 +465,9 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="flex-column text-center">\n' +
     '          <div><i class="fa fa-3x fa-paw"></i></div>\n' +
     '          <div>\n' +
-    '            <p>We\'ll spend 2 nights at Tau, and go on 4 multi-hour game drives!</p>\n' +
+    '            <p>\n' +
+    '              We will spend 2 nights at Tau Game Lodge. The rate per person includes accommodation for 2 nights, 3 meals per day and 4 multi hour game drives.\n' +
+    '            </p>\n' +
     '            <p>~ $560 per person</p>\n' +
     '            <br>\n' +
     '          </div>\n' +
