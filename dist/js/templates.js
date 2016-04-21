@@ -15,8 +15,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="content">\n' +
     '          <div class="row">\n' +
     '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">COMING SOON</h3>\n' +
-    '              <div class="separator"></div>\n' +
+    '              <h3 class="text-center">Stay tuned for more information about what to do in Cape Town and Wine country...</h3>\n' +
+    '              <!-- <div class="separator"></div> -->\n' +
     '            </div>\n' +
     '          </div>\n' +
     '        </div>\n' +
@@ -25,25 +25,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
     '</div>\n' +
     '');
 }]);
@@ -248,6 +229,40 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('photos/photos.template.html',
+    '<div class="text-center">\n' +
+    '  <h1>COMING SOON</h1>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('nav/nav.template.html',
     '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
     '  <div class="container">\n' +
@@ -268,21 +283,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '\n' +
     '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('photos/photos.template.html',
-    '<div class="text-center">\n' +
-    '  <h1>COMING SOON</h1>\n' +
     '</div>\n' +
     '');
 }]);
