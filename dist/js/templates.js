@@ -7,7 +7,6 @@ try {
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('activities/activities.template.html',
     '<div id="activities" class="page">\n' +
-    '  <div class="wide"></div>\n' +
     '\n' +
     '  <div class="container-fluid">\n' +
     '    <div class="text-center">\n' +
@@ -16,197 +15,9 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="content">\n' +
     '          <div class="row">\n' +
     '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">SAFARI</h3>\n' +
+    '              <h3 class="text-center">COMING SOON</h3>\n' +
     '              <div class="separator"></div>\n' +
     '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="row">\n' +
-    '            <div class="col-xs-12">\n' +
-    '              <p>\n' +
-    '                After the wedding, we\'ll be going on safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                Safari is our most highly recommended activity, espeicially if you\'re visiting South Africa for the first time. We hope\n' +
-    '                you can join us!\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                We\'ll need to reserve our spots on safari <strong>ASAP</strong> so we\'ve asked you to confirm your interest in our <a href ui-sref="rsvp">RSVP</a>.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                We anticitpate that the safari portion - including all transportation and meals etc - will cost ~ $1,000 per person. Please take some time to scroll through the details below.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                Once everyone has confirmed their interest in safari via our <a href ui-sref="rsvp">RSVP</a>, we\'ll be making a deposit for the group for the entire package.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                <strong>Please keep this in mind, as committing, then backing out will come at a high cost</strong>.\n' +
-    '              </p>\n' +
-    '\n' +
-    '              <p>\n' +
-    '                Stay tuned for further updates once the group size is confirmed.\n' +
-    '              </p>\n' +
-    '\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '\n' +
-    '      <div class="row-fluid section inverse">\n' +
-    '        <div class="row">\n' +
-    '          <div class="col-xs-12">\n' +
-    '            <p></p>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '\n' +
-    '      <div kinetic class="section primary bg-secondary drag-row">\n' +
-    '\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>First we\'ll take a bus to the airport from our hotels in wine country.</p>\n' +
-    '            <p>~ $10 per person</p>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-plane"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>Then we\'ll catch a flight to Johannesburg.</p>\n' +
-    '            <p>~ $150 per person</p>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>From the airport, we\'ll take another bus to the Sun City Resort</p>\n' +
-    '            <p>~ $90 per person<br><strong>Covers all bus fees from here on</strong></p>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-bed"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>We\'ll spend one night in Sun City, enjoying the resort and splitting up the travel</p>\n' +
-    '            <p>~ $125 per person</p>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>On the morning of the 12th, we\'ll head out to the Tau Game Lodge.</p>\n' +
-    '            <p> </p>\n' +
-    '            <br>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
-    '\n' +
-    '        <div class="flex-column text-center">\n' +
-    '          <div><i class="fa fa-3x fa-paw"></i></div>\n' +
-    '          <div>\n' +
-    '            <p>We\'ll spend 2 nights at Tau, and go on 4 multi-hour game drives!</p>\n' +
-    '            <p>~ $560 per person</p>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '\n' +
-    '\n' +
-    '        <!-- <div class="flex-item" style="max-width: 25%;">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/sun_city.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Oct 11</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="primary flex-column text-center">\n' +
-    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '            <div><p>First we\'ll take a bus to the airport from our hotels in wine country.</p></div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="primary flex-column text-center">\n' +
-    '            <div><i class="fa fa-3x fa-plane"></i></div>\n' +
-    '            <div><p>Then we\'ll catch a flight to Johannesburg.</p></div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="primary flex-column text-center">\n' +
-    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '            <div>\n' +
-    '              <p>\n' +
-    '                Next we\'ll all get on a bus to <a href="//www.sun-city-south-africa.com/">Sun City</a>,\n' +
-    '                a casino resort, and also the halfway point between Johannesrburg and Tau.\n' +
-    '              </p>\n' +
-    '              <p>We\'ll spend one night here enjoying the resort</p>\n' +
-    '            </div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item" style="max-width: 25%;">\n' +
-    '          <div class="row primary">\n' +
-    '            <img class="img-responsive" src="/images/hotel_rhonda.jpg"/>\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Oct 11</h3>\n' +
-    '              <div class="separator"></div>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '\n' +
-    '\n' +
-    '          <div class="primary text-center">\n' +
-    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '            <div><p>First we\'ll take a bus to the airport from our hotels in wine country.</p></div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="primary text-center">\n' +
-    '            <div><i class="fa fa-3x fa-plane"></i></div>\n' +
-    '            <div><p>Then we\'ll catch a flight to Johannesburg.</p></div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '\n' +
-    '          <div class="primary text-center">\n' +
-    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
-    '            <div>\n' +
-    '              <p>\n' +
-    '                Next we\'ll all get on a bus to <a href="//www.sun-city-south-africa.com/">Sun City</a>.\n' +
-    '              </p>\n' +
-    '            </div>\n' +
-    '            <br>\n' +
-    '          </div>\n' +
-    '        </div> -->\n' +
-    '\n' +
-    '\n' +
-    '      </div> <!-- end flex row -->\n' +
-    '\n' +
-    '      <div class="row-fluid section inverse">\n' +
-    '        <div class="row">\n' +
-    '          <div class="col-xs-12">\n' +
-    '            <p> </p>\n' +
     '          </div>\n' +
     '        </div>\n' +
     '      </div>\n' +
@@ -232,6 +43,38 @@ module.run(['$templateCache', function($templateCache) {
     '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
     '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
     '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
@@ -273,7 +116,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '              <p>\n' +
     '                We\'re planning on spending some time in Cape Town, hosting a classic South African Braai for the rehearsal dinner, and traveling\n' +
-    '                closer to Johannesburg in order to spend a few nights on Safari. While we ask that you join us on October 9th and 10th for the rehearsal\n' +
+    '                closer to Johannesburg in order to spend a few nights on <a href="" ui-sref="safari">Safari</a>. While we ask that you join us on October 9th and 10th for the rehearsal\n' +
     '                and the wedding, please feel free to opt in or out of any of the other planned activities.\n' +
     '              </p>\n' +
     '\n' +
@@ -399,38 +242,6 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
     '</div>\n' +
     '');
 }]);
@@ -856,6 +667,227 @@ module.run(['$templateCache', function($templateCache) {
     '        </div>\n' +
     '\n' +
     '      </div> <!-- end flex row -->\n' +
+    '\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('safari/safari.template.html',
+    '<div id="safari" class="page">\n' +
+    '  <div class="wide"></div>\n' +
+    '\n' +
+    '  <div class="container-fluid">\n' +
+    '    <div class="text-center">\n' +
+    '\n' +
+    '      <div class="row-fluid section primary">\n' +
+    '        <div class="content">\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '              <h3 class="text-center">SAFARI</h3>\n' +
+    '              <div class="separator"></div>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-xs-12">\n' +
+    '              <p>\n' +
+    '                After the wedding, we\'ll be going on safari at the <a href="//www.taugamelodge.co.za/" target="_blank">Tau Game Lodge</a>.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                Safari is our most highly recommended activity, espeicially if you\'re visiting South Africa for the first time. We hope\n' +
+    '                you can join us!\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                We\'ll need to reserve our spots on safari <strong>ASAP</strong> so we\'ve asked you to confirm your interest in our <a href ui-sref="rsvp">RSVP</a>.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                We anticitpate that the safari portion - including all transportation and meals etc - will cost ~ $1,000 per person. Please take some time to scroll through the details below.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                Once everyone has confirmed their interest in safari via our <a href ui-sref="rsvp">RSVP</a>, we\'ll be making a deposit for the group for the entire package.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                <strong>Please keep this in mind, as committing, then backing out will come at a high cost</strong>.\n' +
+    '              </p>\n' +
+    '\n' +
+    '              <p>\n' +
+    '                Stay tuned for further updates once the group size is confirmed.\n' +
+    '              </p>\n' +
+    '\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '      <div class="row-fluid section inverse">\n' +
+    '        <div class="row">\n' +
+    '          <div class="col-xs-12">\n' +
+    '            <p></p>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '      <div kinetic class="section primary bg-secondary drag-row">\n' +
+    '\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>First we\'ll take a bus to the airport from our hotels in wine country.</p>\n' +
+    '            <p>~ $10 per person</p>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-plane"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>Then we\'ll catch a flight to Johannesburg.</p>\n' +
+    '            <p>~ $150 per person</p>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>From the airport, we\'ll take another bus to the Sun City Resort</p>\n' +
+    '            <p>~ $90 per person<br><strong>Covers all bus fees from here on</strong></p>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-bed"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>We\'ll spend one night in Sun City, enjoying the resort and splitting up the travel</p>\n' +
+    '            <p>~ $125 per person</p>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>On the morning of the 12th, we\'ll head out to the Tau Game Lodge.</p>\n' +
+    '            <p> </p>\n' +
+    '            <br>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <i class="fa fa-3x fa-long-arrow-right"></i>\n' +
+    '\n' +
+    '        <div class="flex-column text-center">\n' +
+    '          <div><i class="fa fa-3x fa-paw"></i></div>\n' +
+    '          <div>\n' +
+    '            <p>We\'ll spend 2 nights at Tau, and go on 4 multi-hour game drives!</p>\n' +
+    '            <p>~ $560 per person</p>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '        <!-- <div class="flex-item" style="max-width: 25%;">\n' +
+    '          <div class="row primary">\n' +
+    '            <img class="img-responsive" src="/images/sun_city.jpg"/>\n' +
+    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '              <h3 class="text-center">Oct 11</h3>\n' +
+    '              <div class="separator"></div>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="primary flex-column text-center">\n' +
+    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '            <div><p>First we\'ll take a bus to the airport from our hotels in wine country.</p></div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="primary flex-column text-center">\n' +
+    '            <div><i class="fa fa-3x fa-plane"></i></div>\n' +
+    '            <div><p>Then we\'ll catch a flight to Johannesburg.</p></div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="primary flex-column text-center">\n' +
+    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '            <div>\n' +
+    '              <p>\n' +
+    '                Next we\'ll all get on a bus to <a href="//www.sun-city-south-africa.com/">Sun City</a>,\n' +
+    '                a casino resort, and also the halfway point between Johannesrburg and Tau.\n' +
+    '              </p>\n' +
+    '              <p>We\'ll spend one night here enjoying the resort</p>\n' +
+    '            </div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item" style="max-width: 25%;">\n' +
+    '          <div class="row primary">\n' +
+    '            <img class="img-responsive" src="/images/hotel_rhonda.jpg"/>\n' +
+    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '              <h3 class="text-center">Oct 11</h3>\n' +
+    '              <div class="separator"></div>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '\n' +
+    '\n' +
+    '          <div class="primary text-center">\n' +
+    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '            <div><p>First we\'ll take a bus to the airport from our hotels in wine country.</p></div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="primary text-center">\n' +
+    '            <div><i class="fa fa-3x fa-plane"></i></div>\n' +
+    '            <div><p>Then we\'ll catch a flight to Johannesburg.</p></div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '\n' +
+    '          <div class="primary text-center">\n' +
+    '            <div><i class="fa fa-3x fa-bus"></i></div>\n' +
+    '            <div>\n' +
+    '              <p>\n' +
+    '                Next we\'ll all get on a bus to <a href="//www.sun-city-south-africa.com/">Sun City</a>.\n' +
+    '              </p>\n' +
+    '            </div>\n' +
+    '            <br>\n' +
+    '          </div>\n' +
+    '        </div> -->\n' +
+    '\n' +
+    '\n' +
+    '      </div> <!-- end flex row -->\n' +
+    '\n' +
+    '      <div class="row-fluid section inverse">\n' +
+    '        <div class="row">\n' +
+    '          <div class="col-xs-12">\n' +
+    '            <p> </p>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
     '\n' +
     '    </div>\n' +
     '  </div>\n' +

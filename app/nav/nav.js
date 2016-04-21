@@ -10,6 +10,7 @@ function NavController($state) {
   this.routes = [
     'itinerary',
     'travel',
+    'safari',
     'activities',
     'photos',
     'registry',

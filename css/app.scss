@@ -280,15 +280,16 @@ ui-view {
   width: 100%;
 }
 
-#drag {
-  cursor: grab;
-}
+// #drag {
+//   cursor: grab;
+// }
 
 @import "../app/activities/activities";
 @import "../app/home/home";
 @import "../app/itinerary/itinerary";
 @import "../app/photos/photos";
 @import "../app/registry/registry";
+@import "../app/safari/safari";
 @import "../app/travel/travel";
 
 // set open sans for all h1s and merriwether for all else
@@ -319,7 +320,7 @@ ui-view {
     }
   }
 
-  #travel, #itinerary, #activities {
+  #travel, #itinerary, #safari, #activities {
     .wide {
       height: 70%;
     }

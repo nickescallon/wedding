@@ -27,6 +27,10 @@ angular.module('nc-wedding', [
       url: '/travel',
       templateUrl: 'travel/travel.template.html'
     })
+    .state('safari', {
+      url: '/safari',
+      templateUrl: 'safari/safari.template.html'
+    })
     .state('activities', {
       url: '/activities',
       templateUrl: 'activities/activities.template.html'
