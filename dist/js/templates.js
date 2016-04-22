@@ -281,8 +281,88 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
-    '<div class="text-center">\n' +
-    '  <h1>COMING SOON</h1>\n' +
+    '<div id="photos" class="page">\n' +
+    '  <div class="wide">\n' +
+    '    <div class="caption">\n' +
+    '\n' +
+    '      <div class="col-xs-6 logo pull-right">Artist: Luca Callis</div>\n' +
+    '\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '\n' +
+    '  <div class="container-fluid">\n' +
+    '    <div class="text-center">\n' +
+    '\n' +
+    '      <div class="row-fluid section primary">\n' +
+    '        <div class="content">\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '              <h3 class="text-center">Photos Coming Soon...</h3>\n' +
+    '              <!-- <div class="separator"></div> -->\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '\n' +
+    '  <!-- <div class="container-fluid">\n' +
+    '\n' +
+    '    <div class="row">\n' +
+    '    <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="/images/photos/luca.jpg" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
+    '\n' +
+    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
+    '\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '  </div> -->\n' +
     '</div>\n' +
     '');
 }]);

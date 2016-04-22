@@ -1,6 +1,10 @@
 #photos {
   .wide {
-    background: url(/images/mv-banner3.jpg) no-repeat center center;
+    background: url(/images/banner/luca.jpg) no-repeat center center;
     background-size: cover;
+  }
+
+  .caption {
+    background: none;
   }
 }
