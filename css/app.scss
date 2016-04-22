@@ -320,9 +320,15 @@ ui-view {
     }
   }
 
-  #travel, #itinerary, #safari, #activities, #photos {
+  #travel, #itinerary, #safari, #activities {
     .wide {
       height: 70%;
+    }
+  }
+
+  #photos {
+    .wide {
+      height: 90%;
     }
   }
 }
