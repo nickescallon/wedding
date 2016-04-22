@@ -1,12 +1,12 @@
 #home {
-  background: url('/images/couple6.jpg') no-repeat 30% center;
+  background: url('/images/landing/couple6.jpg') no-repeat 30% center;
   background-size: cover;
   position: relative;
 }
 
 @media (min-width: 600px) {
   #home {
-    background: url('/images/couple6.jpg') no-repeat center center;
+    background: url('/images/landing/couple6.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
   }
