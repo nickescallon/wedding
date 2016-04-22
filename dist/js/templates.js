@@ -126,7 +126,7 @@ module.run(['$templateCache', function($templateCache) {
     '                  <a href="http://www.tokara.co.za/" target="_blank">Tokara</a>\n' +
     '                </p>\n' +
     '                <p>\n' +
-    '                  Check into your room at the <a href="//www.zorgvlietwines.com/" target="_blank">Zorgvliet Wine Estate</a>. We will be hosting the <strong>rehearsal dinner</strong> at 5:00pm. The rehearsal dinner will be a traditional South African braai.”\n' +
+    '                  Check into your room at the <a href="//www.zorgvlietwines.com/" target="_blank">Zorgvliet Wine Estate</a>. We will be hosting the <strong>rehearsal dinner</strong> at 5:00pm. The rehearsal dinner will be a traditional South African braai.\n' +
     '                </p>\n' +
     '\n' +
     '                  <strong>Suggested Attire:</strong> Smart/Casual\n' +
@@ -582,7 +582,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <div class="col-sm-8">\n' +
     '\n' +
     '              <div class="row">\n' +
-    '                <div class="col-md-8 col-md-offset-2">\n' +
+    '                <div class="col-md-10 col-md-offset-1">\n' +
     '                  <h3 class="text-center">TRAVEL PLANS</h3>\n' +
     '                  <div class="separator"></div>\n' +
     '                </div>\n' +
@@ -608,7 +608,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '            <div class="col-sm-4">\n' +
     '              <div class="row">\n' +
-    '                <div class="col-md-8 col-md-offset-2">\n' +
+    '                <div class="col-md-10 col-md-offset-1">\n' +
     '                  <h3 class="text-center">TRAVEL AGENT</h3>\n' +
     '                  <div class="separator"></div>\n' +
     '                </div>\n' +
@@ -629,7 +629,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <div class="content">\n' +
     '\n' +
     '           <div class="row">\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
+    '            <div class="col-md-10 col-md-offset-1">\n' +
     '              <h3 class="text-center">WHERE TO STAY IN CAPE TOWN</h3>\n' +
     '              <div class="separator"></div>\n' +
     '            </div>\n' +
@@ -653,7 +653,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <a href="//www.presidenthotel.co.za/" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/president.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">President Hotel</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -686,7 +686,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <a href="//www.radissonblu.com/en/hotel-capetown" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/radisson.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">Radisson Blu Hotel</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -718,7 +718,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <a href="//www.12apostleshotel.com/" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/12_apostles.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">12 Apostles</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -750,7 +750,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <a href="//peninsula.co.za/" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/peninsula.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">Peninsula Hotel</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -779,54 +779,10 @@ module.run(['$templateCache', function($templateCache) {
     '        </div>\n' +
     '\n' +
     '        <div class="flex-item">\n' +
-    '          <a href="//www.rhondasmanor.co.za/" target="_blank">\n' +
-    '            <div class="row primary">\n' +
-    '              <img class="img-responsive" src="/images/hotel/rhonda.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
-    '                <h3 class="text-center">Rhonda\'s Manor</h3>\n' +
-    '                <div class="separator"></div>\n' +
-    '              </div>\n' +
-    '            </div>\n' +
-    '\n' +
-    '            <div class="row primary">\n' +
-    '              <div class="col-xs-12">\n' +
-    '\n' +
-    '                <div class="row">\n' +
-    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
-    '                  <div class="col-xs-9 text-left">Sea Point</div>\n' +
-    '                  <br>\n' +
-    '                  <br>\n' +
-    '                </div>\n' +
-    '\n' +
-    '                <div class="row">\n' +
-    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
-    '                  <div class="col-xs-9 text-left">$185 - $240/night</div>\n' +
-    '                  <br>\n' +
-    '                  <br>\n' +
-    '                </div>\n' +
-    '\n' +
-    '                <div class="row">\n' +
-    '                  <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
-    '                  <div class="col-xs-9 text-left">\n' +
-    '                    <ul>\n' +
-    '                      <li><p>We spent a week here in 2015 and it was fantastic.</p></li>\n' +
-    '                      <li><p>Centrally located, with a parking garage.</p></li>\n' +
-    '                      <li><p>Delicious home-made breakfast every morning</p></li>\n' +
-    '                      <li><p>Minimum stay required</p></li>\n' +
-    '                    </ul>\n' +
-    '                  </div>\n' +
-    '                </div>\n' +
-    '\n' +
-    '              </div>\n' +
-    '            </div>\n' +
-    '          </a>\n' +
-    '        </div>\n' +
-    '\n' +
-    '        <div class="flex-item">\n' +
     '          <a href="//www.airbnb.com/s/Cape-Town--South-Africa?s_tag=XJQxZgnP" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/airbnb.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">AirBnB</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -868,7 +824,7 @@ module.run(['$templateCache', function($templateCache) {
     '          <a href="//www.property24.com/to-rent" target="_blank">\n' +
     '            <div class="row primary">\n' +
     '              <img class="img-responsive" src="/images/hotel/house.jpg"/>\n' +
-    '              <div class="col-md-8 col-md-offset-2">\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
     '                <h3 class="text-center">House Rentals</h3>\n' +
     '                <div class="separator"></div>\n' +
     '              </div>\n' +
@@ -897,6 +853,50 @@ module.run(['$templateCache', function($templateCache) {
     '                    <ul>\n' +
     '                      <li><p>Affordable and Luxurious</p></li>\n' +
     '                      <li><p>We suggest looking in Bantry Bay, Camps Bay, Seapoint, and Fresnaye</p></li>\n' +
+    '                    </ul>\n' +
+    '                  </div>\n' +
+    '                </div>\n' +
+    '\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '          </a>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <div class="flex-item">\n' +
+    '          <a href="//www.rhondasmanor.co.za/" target="_blank">\n' +
+    '            <div class="row primary">\n' +
+    '              <img class="img-responsive" src="/images/hotel/rhonda.jpg"/>\n' +
+    '              <div class="col-md-10 col-md-offset-1">\n' +
+    '                <h3 class="text-center">Rhonda\'s Manor</h3>\n' +
+    '                <div class="separator"></div>\n' +
+    '              </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="row primary">\n' +
+    '              <div class="col-xs-12">\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Location:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">Sea Point</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Rates:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">$185 - $240/night</div>\n' +
+    '                  <br>\n' +
+    '                  <br>\n' +
+    '                </div>\n' +
+    '\n' +
+    '                <div class="row">\n' +
+    '                  <div class="col-xs-3 text-right"><strong>Notes:</strong></div>\n' +
+    '                  <div class="col-xs-9 text-left">\n' +
+    '                    <ul>\n' +
+    '                      <li><p>We spent a week here in 2015 and it was fantastic.</p></li>\n' +
+    '                      <li><p>Centrally located, with a parking garage.</p></li>\n' +
+    '                      <li><p>Delicious home-made breakfast every morning</p></li>\n' +
+    '                      <li><p>Minimum stay required</p></li>\n' +
     '                    </ul>\n' +
     '                  </div>\n' +
     '                </div>\n' +
