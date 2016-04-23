@@ -7,4 +7,25 @@
   .caption {
     background: none;
   }
+
+  .flex-item {
+    position: relative;
+    // max-height: 500px;
+
+    > img {
+      // height: 400px;
+      // min-height: 100%;
+      width: 100%;
+    }
+
+  }
+}
+
+@media (min-width: 600px) {
+  #photos {
+    .flex-item > img {
+      width: inherit;
+      height: 400px;
+    }
+  }
 }

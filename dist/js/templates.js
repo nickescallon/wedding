@@ -56,38 +56,6 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('nav/nav.template.html',
-    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
-    '  <div class="container">\n' +
-    '\n' +
-    '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
-    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <div class="collapse navbar-collapse">\n' +
-    '      <ul class="nav navbar-nav navbar-right">\n' +
-    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
-    '          <a href ui-sref="{{route}}">\n' +
-    '            {{::route}}\n' +
-    '          </a>\n' +
-    '        </li>\n' +
-    '      </ul>\n' +
-    '    </div>\n' +
-    '\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -280,89 +248,86 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('nav/nav.template.html',
+    '<div class="navbar navbar-inverse navbar-fixed-top">\n' +
+    '  <div class="container">\n' +
+    '\n' +
+    '    <div class="navbar-header">\n' +
+    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="collapse navbar-collapse">\n' +
+    '      <ul class="nav navbar-nav navbar-right">\n' +
+    '        <li ng-repeat="route in $ctrl.routes" ui-sref-active="active">\n' +
+    '          <a href ui-sref="{{route}}">\n' +
+    '            {{::route}}\n' +
+    '          </a>\n' +
+    '        </li>\n' +
+    '      </ul>\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
     '<div id="photos" class="page">\n' +
     '  <div class="wide">\n' +
     '    <div class="caption">\n' +
-    '\n' +
     '      <div class="col-xs-6 logo pull-right">Artist: Luca Callis</div>\n' +
-    '\n' +
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
-    '  <div class="container-fluid">\n' +
-    '    <div class="text-center">\n' +
+    '  <div class="flex-row section primary bg-secondary">\n' +
     '\n' +
-    '      <div class="row-fluid section primary">\n' +
-    '        <div class="content">\n' +
-    '          <div class="row">\n' +
-    '            <div class="col-md-8 col-md-offset-2">\n' +
-    '              <h3 class="text-center">Photos Coming Soon...</h3>\n' +
-    '              <!-- <div class="separator"></div> -->\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/roofdeck.jpg"/>\n' +
     '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/kitchen.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/lobster.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/cottilion.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/beso.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/30th.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/seapoint.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/colombia.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <div class="flex-item">\n' +
+    '      <img src="/images/photos/hamilton.jpg"/>\n' +
+    '    </div>\n' +
+    '\n' +
     '  </div>\n' +
     '\n' +
-    '  <!-- <div class="container-fluid">\n' +
-    '\n' +
-    '    <div class="row">\n' +
-    '    <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="/images/photos/luca.jpg" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '     <div class="col-lg-4 col-sm-6 col-xs-12">\n' +
-    '\n' +
-    '             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">\n' +
-    '\n' +
-    '    </div>\n' +
-    '  </div>\n' +
-    '\n' +
-    '\n' +
-    '\n' +
-    '\n' +
-    '\n' +
-    '\n' +
-    '  </div> -->\n' +
     '</div>\n' +
     '');
 }]);
@@ -400,21 +365,6 @@ module.run(['$templateCache', function($templateCache) {
     '      </a>\n' +
     '    </li>\n' +
     '  </ul>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('rsvp/rsvp.template.html',
-    '<div id="activities" class="page">\n' +
-    '  <iframe src="https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\n' +
     '</div>\n' +
     '');
 }]);
@@ -991,6 +941,21 @@ module.run(['$templateCache', function($templateCache) {
     '    </div>\n' +
     '  </div>\n' +
     '\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('rsvp/rsvp.template.html',
+    '<div id="activities" class="page">\n' +
+    '  <iframe src="https://docs.google.com/forms/d/1h8t3fy5Q7ydP2E5o3dMzjWgARI6iNt8mqwVTbcTGgCM/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\n' +
     '</div>\n' +
     '');
 }]);
