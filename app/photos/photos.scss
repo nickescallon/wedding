@@ -14,6 +14,7 @@
 
   .flex-item {
     position: relative;
+    margin: 7.5px 0px;
 
     > img {
       width: 100%;
@@ -24,9 +25,13 @@
 
 @media (min-width: 800px) {
   #photos {
-    .flex-item > img {
-      width: inherit;
-      height: 200px;
+    .flex-item {
+      margin: 7.5px;
+
+      > img {
+        width: inherit;
+        height: 200px;
+      }
     }
   }
 }
