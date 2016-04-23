@@ -8,6 +8,10 @@
     background: none;
   }
 
+  .flex-row {
+    height: 100%;
+  }
+
   .flex-item {
     position: relative;
 
@@ -18,11 +22,20 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #photos {
     .flex-item > img {
       width: inherit;
       height: 200px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #photos {
+    .flex-item > img {
+      width: inherit;
+      height: 250px;
     }
   }
 }
