@@ -10,22 +10,43 @@
 
   .flex-item {
     position: relative;
-    // max-height: 500px;
 
     > img {
-      // height: 400px;
-      // min-height: 100%;
       width: 100%;
     }
 
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   #photos {
     .flex-item > img {
       width: inherit;
-      height: 400px;
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  #photos {
+    .flex-item > img {
+      height: 300px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  #photos {
+    .flex-item > img {
+      height: 320px;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  #photos {
+    .flex-item > img {
+      height: 350px;
     }
   }
 }
