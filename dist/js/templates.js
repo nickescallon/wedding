@@ -37,25 +37,6 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('home/home.template.html',
-    '<div id="home" class="page">\n' +
-    '  <div class="caption">\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
-    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('nc-wedding.templates');
-} catch (e) {
-  module = angular.module('nc-wedding.templates', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('itinerary/itinerary.template.html',
     '<div id="itinerary" class="page">\n' +
     '  <div class="wide"></div>\n' +
@@ -280,8 +261,32 @@ try {
   module = angular.module('nc-wedding.templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('home/home.template.html',
+    '<div id="home" class="page">\n' +
+    '  <div class="caption">\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '    <div class="col-xs-6 logo pull-right">Chiara & Nick</div>\n' +
+    '    <!-- <div class="col-sm-5 col-xs-3 line"><hr></div> -->\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('nc-wedding.templates');
+} catch (e) {
+  module = angular.module('nc-wedding.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('photos/photos.template.html',
     '<div id="photos" class="page">\n' +
+    '  <div class="wide">\n' +
+    '    <div class="caption">\n' +
+    '      <div class="col-xs-6 logo pull-right">Artist: Luca Callis</div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
     '\n' +
     '  <div class="flex-row section primary bg-secondary">\n' +
     '\n' +
@@ -313,12 +318,12 @@ module.run(['$templateCache', function($templateCache) {
     '      <img src="/images/photos/seapoint.jpg"/>\n' +
     '    </div>\n' +
     '\n' +
-    '    <div class="flex-item">\n' +
+    '    <!-- <div class="flex-item">\n' +
     '      <img src="/images/photos/Luca.jpg"/>\n' +
     '      <div class="caption">\n' +
     '        <div class="col-xs-12 logo pull-right">Artist: Luca Callis</div>\n' +
     '      </div>\n' +
-    '    </div>\n' +
+    '    </div> -->\n' +
     '\n' +
     '    <div class="flex-item">\n' +
     '      <img src="/images/photos/colombia.jpg"/>\n' +
