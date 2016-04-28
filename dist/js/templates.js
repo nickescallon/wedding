@@ -253,7 +253,7 @@ module.run(['$templateCache', function($templateCache) {
     '  <div class="container">\n' +
     '\n' +
     '    <div class="navbar-header">\n' +
-    '      <i class="fa fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
+    '      <i class="fa fa-2x fa-bars navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></i>\n' +
     '      <a class="navbar-brand" href ui-sref-active="active" ui-sref="home">Escallucci</a>\n' +
     '    </div>\n' +
     '\n' +

@@ -39,11 +39,21 @@ $navbar-height-desktop: 50px;
 
 //BOOTSTRAP OVERRIDES
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:5px !important;
-    padding-bottom:0 !important;
-    height: $navbar-height-mobile;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  height: $navbar-height-desktop;
 }
-.navbar {min-height: $navbar-height-mobile !important;}
+.navbar {min-height: $navbar-height-desktop !important;}
+// .navbar-nav > li > a, .navbar-brand {
+//     padding-top:5px !important;
+//     padding-bottom:0 !important;
+//     height: $navbar-height-mobile;
+// }
+// .navbar {min-height: $navbar-height-mobile !important;}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 370px;
+}
 
 .navbar-toggle {
   margin: 0;
@@ -119,7 +129,8 @@ body,html {
 }
 
 body {
-  padding-top: $navbar-height-mobile;
+  // padding-top: $navbar-height-mobile;
+  padding-top: $navbar-height-desktop;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
@@ -295,16 +306,6 @@ ui-view {
 // set open sans for all h1s and merriwether for all else
 @media (min-width: 768px) {
   // navbar changes
-  body {
-    padding-top: $navbar-height-desktop;
-  }
-  .navbar-nav > li > a, .navbar-brand {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    height: $navbar-height-desktop;
-  }
-  .navbar {min-height: $navbar-height-desktop !important;}
-
   .navbar-toggle {
     display: none;
   }
