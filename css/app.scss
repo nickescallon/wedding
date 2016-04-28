@@ -293,7 +293,7 @@ ui-view {
 @import "../app/travel/travel";
 
 // set open sans for all h1s and merriwether for all else
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   // navbar changes
   body {
     padding-top: $navbar-height-desktop;
